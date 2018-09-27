@@ -1,0 +1,10 @@
+
+  #mybutton {
+    z-index: 999;
+    position: fixed;
+    bottom: -4px;
+    right: 10px;
+  }
+  .uk-modal-close-full{
+    background: #fff0!important;
+  }

@@ -4,413 +4,150 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Test Offer</title>
+    <title>Page Offer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.16/css/uikit.min.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <link rel="stylesheet" href="floatingpanel.css"> -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css" /> -->
-    <!-- <link rel="stylesheet" href="https://phinemo.com/wp-content/themes/projectav2/css/A.mobile-new.css,,qver==1.9.9+mobile-v2.css,,qver==1.0.1,Mcc.TJj1-u_KCE.css.pagespeed.cf.TFPKXy9G8h.css" /> -->
-    <!-- UIkit JS -->
+    <link rel="stylesheet" href="css/vuikit.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.16/js/uikit.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
-        crossorigin="anonymous"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.16/js/uikit-icons.min.js"></script>
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/http-vue-loader"></script>
+    <script src="js/vuikit.min.js"></script>
+    <script src="js/vuikit-icons.min.js"></script>
+    
+    <!-- UIkit JS -->
+
     <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script> -->
+
 </head>
 
 <body>
+    <div id="app" class="uk-container">
+        <navbar class=""></navbar>
+        <slideshow></slideshow>
+        <hr style="margin-top:0px;">
+        <div class="" style="margin-top: 30px; margin-bottom: 10px; ">
+            <h4 class="uk-text-bold" style="margin-bottom: 0px;">Destinasi Populer</h4>
+        </div>
+        <hr style="margin-top:0px; margin-bottom: 10px; border: 0px; height: 10px; box-shadow: 0 10px 10px -10px #8c8c8c inset;">
+        <slider></slider>
+        <br style="margin-bottom: 10px;">
+        <div class="" style="margin-bottom: 10px; ">
+            <h4 class="uk-text-bold uk-heading-line" style="margin-bottom: 0px;"><span>Penawaran Spesial</span></h4>
+        </div>
+        <br style="margin-top:0px; margin-bottom: 10px;">
+        <banner></banner>
+        
+    </div>
+    <button class="uk-button uk-width-1-1 uk-margin-small-bottom" style="color: orange; border: 2px solid orange; background-color: white;">Cek
+        Semua Penawaran</button>
 
-    <div class="uk-container-expand">
-        <!-- Navbar Start -->
-        <div uk-grid>
-            <div class="uk-width-1-1">
-                <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
-                    <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
-                        <div class="uk-navbar-left">
-                            <ul class="uk-navbar-nav">
-                                <li class="uk-active"><a href="" uk-toggle="target: #offcanvas-menu"><span uk-icon="menu"></span></a></li>
-                            </ul>
-                        </div>
-                        <div class="uk-navbar-center">
-                            <ul class="uk-navbar-nav">
-                                <li><a href=""><img data-src="https://www.phinemo.com/wp-content/themes/projectav2/images/114x30xlogo-phinemo.png.pagespeed.ic.qkIeB28U-q.webp"
-                                            alt="" uk-img></a></li>
-                            </ul>
-                        </div>
-                        <div class="uk-navbar-right">
-                            <ul class="uk-navbar-nav">
-                                <li class="uk-active"><a href="#"><span uk-icon="search"></span></a></li>
-                            </ul>
-                        </div>
-                    </nav>
+    <hr style="margin-top:5px; margin-bottom: 10px;">
+
+    <div class="" style="margin-bottom: 10px; ">
+        <h4 class="uk-text-bold" style="margin-bottom: 0px;">Amazing Tour & Travel</h4>
+    </div>
+
+    <hr style="margin-top:10px; margin-bottom: 10px;">
+
+    <img data-src="https://via.placeholder.com/600x300" style="width: 100%; height: 100px; margin-bottom: 20px;"
+        alt="" uk-img>
+
+    <div class="uk-text-right" style="margin-bottom: 10px; ">
+        <a class="uk-text-bold" href="#" style="color: black;">Lihat Lainnnya ...</a>
+    </div>
+
+    <div uk-slider="center: true">
+
+        <div class="uk-position-relative uk-visible-toggle uk-light">
+
+            <ul class="uk-slider-items uk-width-3-4 uk-child-width-1-2@s uk-grid">
+                <li style="padding-left: 10px;">
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <img src="https://via.placeholder.com/600x300"" alt="">
                 </div>
-                <div id="offcanvas-menu" uk-offcanvas="overlay:true">
-                    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
-                        <button class="uk-offcanvas-close" type="button" uk-close></button>
-                        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
-                            <li class="uk-active"><a href="/">HOME</a></li>
-                            <li class="uk-active"><a href="#">POPULER</a></li>
-                            <li class="uk-active">
-                                <a href="#">ARTICLE</a>
-                                <ul class="uk-nav-sub">
-                                    <li><a href="category/news/">NEWS</a></li>
-                                    <li><a href="category/travel-ideas/">TRAVEL IDEAS</a></li>
-                                    <li><a href="category/infografik/">INFOGRAPHIC</a></li>
-                                    <li><a href="category/podcast/">PODCAST</a></li>
-                                    <li><a href="category/story/">STORY</a></li>
-                                </ul>
-                            </li>
-                            <li class="uk-active">
-                                <a href="#">COMMUNITY</a>
-                                <ul class="uk-nav-sub">
-                                    <li><a href="s/user/login/">SIGN IN / SIGN UP</a></li>
-                                    <li><a href="s/">ALL</a></li>
-                                    <li><a href="s/user/rank/">TOP USER</a></li>
-                                </ul>
-                            </li>
-                            <li class="uk-nav-divider"></li>
-                            <ul class="uk-nav-sub">
-                                <li><a href="about/">ABOUT US</a></li>
-                                <li><a href="careers/">WORK FOR US</a></li>
-                                <li><a href="advertise/">ADVERTISE</a></li>
-                                <li><a href="contact/">CONTACT US</a></li>
-                                <li><a href="#">HELP</a></li>
-                            </ul>
-                        </ul>
+                <div class="uk-card-body">
+                            <h3 class="uk-card-title">Headline</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt.</p>
+                        </div>
                     </div>
+                </li>
+                <li style="padding-left: 10px;">
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <img src="https://via.placeholder.com/600x300"" alt="">
                 </div>
-            </div>
+                <div class="uk-card-body">
+                            <h3 class="uk-card-title">Headline</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt.</p>
+                        </div>
+                    </div>
+                </li>
+                <li style="padding-left: 10px;">
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <img src="https://via.placeholder.com/600x300"" alt="">
+                </div>
+                <div class="uk-card-body">
+                            <h3 class="uk-card-title">Headline</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt.</p>
+                        </div>
+                    </div>
+                </li>
+                <li style="padding-left: 10px;">
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <img src="https://via.placeholder.com/600x300"" alt="">
+                </div>
+                <div class="uk-card-body">
+                            <h3 class="uk-card-title">Headline</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt.</p>
+                        </div>
+                    </div>
+                </li>
+                <li style="padding-left: 10px;">
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <img src="https://via.placeholder.com/600x300"" alt="">
+                </div>
+                <div class="uk-card-body">
+                            <h3 class="uk-card-title">Headline</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+                uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+                uk-slider-item="next"></a>
         </div>
-        <!-- Navbar End -->
+        <hr style="margin-top: 30px; margin-bottom: 10px;">
+       
     </div>
-    <!-- Content Fill -->
-    <div class="uk-container">
-        <div class="uk-grid">
-            <div class="uk-width-1-1">
-                <article class="uk-article">
-                    <h1 class="uk-article-header">Tak
-                        Perlu Khawatir Bila Ternyata Pilot Tidur selama Penerbangan</h1>
-                    <p class="uk-article-meta"><i>Agustus lalu, penumpang United Airlines menangkap foto pilot
-                            tidur di luar kokpit selama 90 menit. Foto tersebar dan seketika dunia maya heboh
-                            karenanya.</i></p>
-                    <p><a class="" href="#">Himas Nur</a></p>
-                    <img data-src="https://via.placeholder.com/1920x1080" alt="" width="1920" height="1080" uk-img>
-                    <p class="uk-article-meta uk-margin-remove-top uk-margin-bottom"><cite>Ilustrasi Awak
-                            Penerbang Tertidur (Foto/Basith Subastian)</cite></p>
 
-                    <p class="uk-text-justify"> Mengutip <em>Travel and Leisure</em> pada Senin (17/9), pada bulan
-                        Agustus kemarin
-                        terjadi “drama di udara” ketika seorang pilot United Airlines tertangkap kamera
-                        sedang tertidur dalam pesawat dengan tujuan dari Amerika ke Glasglow, Skotlandia.
-                    </p>
-                    <p class="uk-text-justify">oto yang telah tersebar itu sontak menjadi tanda tanya dan membuat
-                        heboh,&nbsp;lantaran berpikir jika pilot tidur siapa yang mengendalikan pesawat.</p>
-                    <img data-src="https://phinemo.com/wp-content/uploads/2018/09/2-10-e1537244208124.jpeg" alt=""
-                        uk-img>
-                    <p class="uk-article-meta"><cite>(Istockphoto/Humonia)</cite></p>
-                    <p class="uk-text-justify">Seorang penumpang yang mengambil foto tersebut mengaku melihat sang
-                        pilot tertidur
-                        di luar kokpit selama 90 menit. Sebelum memejamkan mata, penumpang mengaku melihat
-                        sang pilot pergi ke toilet dan mengganti bajunya.</p>
-                    <p class="uk-text-justify">Walaupun terdengar mengerikan, sesungguhnya kondisi tidurnya pilot
-                        merupakan hal
-                        yang tak perlu dikhawatirkan.&nbsp;Sebenarnya, sama seperti penumpang, pilot pun
-                        punya hak untuk beristirahat.</p>
-                    <p class="uk-text-justify">The Federal Aviation Administration, sebuah badan administrasi AS,
-                        justru meminta
-                        para awak penerbang untuk istirahat saat melakukan penerbangan panjang.</p>
-                </article>
-            </div>
-        </div>
-    </div>
-    <!-- Button Offer -->
-    <div id="mybutton" class="uk-inline">
-        <a class="uk-button uk-button-primary uk-border-rounded" href="#modal-full" uk-toggle><span uk-icon="tag"></span>
-            Offers</a>
-    </div>
-    <!-- End Button Offer -->
-    <!-- Floating Panel -->
-    <div id="modal-full" class="uk-modal-full" uk-modal>
-        <div class="uk-modal-dialog">
-            <div class="uk-navbar-container" uk-navbar>
-                <div class="uk-navbar-left">
-                    <ul class="uk-navbar-nav">
-                        <li><a href=""></a></li>
-                    </ul>
-                </div>
-                <div class="uk-navbar-center">
-                    <ul class="uk-navbar-nav">
-                        <li class="uk-text-lead">Special Offer</li>
-                    </ul>
-                </div>
-                <div class="uk-navbar-right">
-                    <ul class="uk-navbar-nav">
-                        <li><button class="uk-modal-close-full uk-close-large" type="button" uk-close></button></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
-                <!-- Offer List -->
-                <div class="uk-grid-small uk-animation-fade uk-flex-middle uk-child-width-1-9 uk-child-width-1-2@m uk-child-width-1-3@l uk-padding-small"
-                    uk-grid>
-                    <!-- Card Offer -->
-                    <!-- <div class="uk-panel uk-panel-box"> -->
-                        <!-- Make zero margin, sticky between "offer", there's no space -->
-                        <div>
-                            <div class="uk-card uk-card-default uk-card-hover">
-                                <div class="uk-card-header">
-                                    <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                        <div class="uk-width-auto">
-                                            <img width="70" height="70" src="https://www.ccsmedia.com/media/ccs-logo.svg">
-                                        </div>
-                                        <div class="uk-width-expand">
-                                            <!-- Title -->
-                                            <h4 class=" uk-margin-remove-bottom">Liburan ke Hongkong 20% OFF</h4>
-                                            <!-- Highlight -->
-                                            <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                                <div class="uk-width-auto">
-                                                    <a href="#" class="uk-button uk-button-primary uk-border-rounded">300$</a><br>
-                                                    <span class="uk-margin-remove" uk-icon="icon:star;ratio:0.8;"></span>
-                                                    <span class="uk-margin-remove" uk-icon="icon:star;ratio:0.8;"></span>
-                                                    <span class="uk-margin-remove" uk-icon="icon:star;ratio:0.8;"></span>
-                                                    <span class="uk-margin-remove" uk-icon="icon:star;ratio:0.8;"></span>
-                                                    <span class="uk-margin-remove" uk-icon="icon:star;ratio:0.8;"></span>
-                                                </div>
-                                                <div class="uk-width-expand">
-
-                                                    <ul class="uk-list uk-list-striped">
-                                                        <li class="uk-padding-remove uk-text-small">Gratis handuk</li>
-                                                        <li class="uk-text-small uk-padding-remove">Fasilitas Murah</li>
-                                                        <li class="uk-text-small uk-padding-remove">Free Wifi</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="uk-card uk-card-default uk-card-hover">
-                                <div class="uk-card-header">
-                                    <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                        <div class="uk-width-auto">
-                                            <img width="70" height="70" src="https://www.ccsmedia.com/media/ccs-logo.svg">
-                                        </div>
-                                        <div class="uk-width-expand">
-                                            <!-- Title -->
-                                            <h4 class=" uk-margin-remove-bottom">Liburan ke Hongkong 20% OFF</h4>
-                                            <!-- Highlight -->
-                                            <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                                <div class="uk-width-auto">
-                                                    <a href="#" class="uk-button uk-button-primary uk-border-rounded">300$</a><br>
-                                                    <span class="uk-margin-remove" uk-icon="icon:star;ratio:0.8;"></span>
-                                                    <span class="uk-margin-remove" uk-icon="icon:star;ratio:0.8;"></span>
-                                                    <span class="uk-margin-remove" uk-icon="icon:star;ratio:0.8;"></span>
-                                                    <span class="uk-margin-remove" uk-icon="icon:star;ratio:0.8;"></span>
-                                                    <span class="uk-margin-remove" uk-icon="icon:star;ratio:0.8;"></span>
-                                                </div>
-                                                <div class="uk-width-expand">
-
-                                                    <ul class="uk-list uk-list-striped">
-                                                        <li class="uk-padding-remove uk-text-small">Gratis handuk</li>
-                                                        <li class="uk-text-small uk-padding-remove">Fasilitas Murah</li>
-                                                        <li class="uk-text-small uk-padding-remove">Free Wifi</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="uk-card uk-card-default uk-card-hover">
-                                <div class="uk-card-header">
-                                    <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                        <div class="uk-width-auto">
-                                            <img width="70" height="70" src="https://www.ccsmedia.com/media/ccs-logo.svg">
-                                        </div>
-                                        <div class="uk-width-expand">
-                                            <!-- Title -->
-                                            <h4 class=" uk-margin-remove-bottom">Liburan ke Hongkong 20% OFF</h4>
-                                            <!-- Highlight -->
-                                            <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                                <div class="uk-width-auto">
-                                                    <a href="#" class="uk-button uk-button-primary uk-border-rounded">300$</a><br>
-                                                    <span class="uk-margin-remove" uk-icon="icon:star;ratio:0.8;"></span>
-                                                    <span class="uk-margin-remove" uk-icon="icon:star;ratio:0.8;"></span>
-                                                    <span class="uk-margin-remove" uk-icon="icon:star;ratio:0.8;"></span>
-                                                    <span class="uk-margin-remove" uk-icon="icon:star;ratio:0.8;"></span>
-                                                    <span class="uk-margin-remove" uk-icon="icon:star;ratio:0.8;"></span>
-                                                </div>
-                                                <div class="uk-width-expand">
-
-                                                    <ul class="uk-list uk-list-striped">
-                                                        <li class="uk-padding-remove uk-text-small">Gratis handuk</li>
-                                                        <li class="uk-text-small uk-padding-remove">Fasilitas Murah</li>
-                                                        <li class="uk-text-small uk-padding-remove">Free Wifi</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="uk-card uk-card-default uk-card-hover">
-                                <div class="uk-card-header">
-                                    <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                        <div class="uk-width-auto">
-                                            <img width="70" height="70" src="https://www.ccsmedia.com/media/ccs-logo.svg">
-                                        </div>
-                                        <div class="uk-width-expand">
-                                            <!-- Title -->
-                                            <h4 class=" uk-margin-remove-bottom">Liburan ke Hongkong 20% OFF</h4>
-                                            <!-- Highlight -->
-                                            <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                                <div class="uk-width-auto">
-                                                    <a href="#" class="uk-button uk-button-primary uk-border-rounded">300$</a><br>
-                                                    <span class="uk-margin-remove" uk-icon="icon:star;ratio:0.8;"></span>
-                                                    <span class="uk-margin-remove" uk-icon="icon:star;ratio:0.8;"></span>
-                                                    <span class="uk-margin-remove" uk-icon="icon:star;ratio:0.8;"></span>
-                                                    <span class="uk-margin-remove" uk-icon="icon:star;ratio:0.8;"></span>
-                                                    <span class="uk-margin-remove" uk-icon="icon:star;ratio:0.8;"></span>
-                                                </div>
-                                                <div class="uk-width-expand">
-
-                                                    <ul class="uk-list uk-list-striped">
-                                                        <li class="uk-padding-remove uk-text-small">Gratis handuk</li>
-                                                        <li class="uk-text-small uk-padding-remove">Fasilitas Murah</li>
-                                                        <li class="uk-text-small uk-padding-remove">Free Wifi</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="uk-card uk-card-default uk-card-hover">
-                                <div class="uk-card-header">
-                                    <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                        <div class="uk-width-auto">
-                                            <img width="70" height="70" src="https://www.ccsmedia.com/media/ccs-logo.svg">
-                                        </div>
-                                        <div class="uk-width-expand">
-                                            <!-- Title -->
-                                            <h4 class=" uk-margin-remove-bottom">Liburan ke Hongkong 20% OFF</h4>
-                                            <!-- Highlight -->
-                                            <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                                <div class="uk-width-auto">
-                                                    <a href="#" class="uk-button uk-button-primary uk-border-rounded">300$</a><br>
-                                                    <span class="uk-margin-remove" uk-icon="icon:star;ratio:0.8;"></span>
-                                                    <span class="uk-margin-remove" uk-icon="icon:star;ratio:0.8;"></span>
-                                                    <span class="uk-margin-remove" uk-icon="icon:star;ratio:0.8;"></span>
-                                                    <span class="uk-margin-remove" uk-icon="icon:star;ratio:0.8;"></span>
-                                                    <span class="uk-margin-remove" uk-icon="icon:star;ratio:0.8;"></span>
-                                                </div>
-                                                <div class="uk-width-expand">
-
-                                                    <ul class="uk-list uk-list-striped">
-                                                        <li class="uk-padding-remove uk-text-small">Gratis handuk</li>
-                                                        <li class="uk-text-small uk-padding-remove">Fasilitas Murah</li>
-                                                        <li class="uk-text-small uk-padding-remove">Free Wifi</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="uk-card uk-card-default uk-card-hover">
-                                <div class="uk-card-header">
-                                    <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                        <div class="uk-width-auto">
-                                            <img width="70" height="70" src="https://www.ccsmedia.com/media/ccs-logo.svg">
-                                        </div>
-                                        <div class="uk-width-expand">
-                                            <!-- Title -->
-                                            <h4 class=" uk-margin-remove-bottom">Liburan ke Hongkong 20% OFF</h4>
-                                            <!-- Highlight -->
-                                            <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                                <div class="uk-width-auto">
-                                                    <a href="#" class="uk-button uk-button-primary uk-border-rounded">300$</a><br>
-                                                    <span class="uk-margin-remove" uk-icon="star"></span>
-                                                    <span class="uk-margin-remove" uk-icon="star"></span>
-                                                    <span class="uk-margin-remove" uk-icon="star"></span>
-                                                    <span class="uk-margin-remove" uk-icon="star"></span>
-                                                </div>
-                                                <div class="uk-width-expand">
-
-                                                    <ul class="uk-list uk-list-striped">
-                                                        <li class="uk-padding-remove uk-text-small">Gratis handuk</li>
-                                                        <li class="uk-text-small uk-padding-remove">Fasilitas Murah</li>
-                                                        <li class="uk-text-small uk-padding-remove">Free Wifi</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End of UK panel -->
-                    <!-- </div> -->
-                </div>
-                <!-- End Offer List -->
-            </div>
-        </div>
-    </div>
-    <!--  -->
-
-    <!-- End Content Fill -->
-    <!-- Addtional Content Recommendation and Popular -->
-    <div class="uk-container uk-card uk-card-body">
-        <h5 class="black-text"><b>REKOMENDASI</b></h5>
-        <ul class="uk-list-divider uk-link-reset uk-text-medium uk-text-capitalize" style="list-style:decimal-leading-zero; color:#444444">
-            <li>
-                <h5><a href="/bagaimana-menjadikan-perjalanan-anda-semakin-sustainable-untuk-lingkungan/">Bagaimana
-                        Menjadikan Perjalanan Anda Semakin Sustainable Untuk Lingkungan</a></h5>
-            </li>
-        </ul>
-    </div>
-    <div class="uk-container uk-card uk-card-body">
-        <h5 class=""><b>POPULER MINGGU INI</b></h5>
-        <ul class="uk-list-divider uk-link-reset uk-text-medium uk-text-capitalize" style="list-style:decimal-leading-zero; color:#444444">
-            <li>
-                <h5><a href="/pilot-tidur-selama-penerbangan/" title="Tak Perlu Khawatir Bila Ternyata Pilot Tidur selama Penerbangan"
-                        class="wpp-post-title" target="_self">Tak Perlu Khawatir Bila Ternyata Pilot
-                        Tidur selama Penerbangan</a></h5>
-            </li>
-            <li>
-                <h5><a href="/batu-caves-dicat-warna-warni-netizen-dunia-geram/" title="Kata Manajemen Soal Batu Caves Dicat Warna-Warni yang Dikecam Dunia"
-                        class="wpp-post-title" target="_self">Kata Manajemen Soal Batu Caves Dicat
-                        Warna-Warni yang Dikecam Dunia</a></h5>
-            </li>
-            <li>
-                <h5><a href="/bandara-i-gusti-ngurah-rai-dinobatkan-sebagai-bandara-terbaik-dunia/" title="Bandara I Gusti Ngurah Rai Dinobatkan Sebagai Bandara Terbaik Dunia"
-                        class="wpp-post-title" target="_self">Bandara I Gusti Ngurah Rai Dinobatkan
-                        Sebagai Bandara Terbaik Dunia</a></h5>
-            </li>
-            <li>
-                <h5><a href="/asmirandah-dan-jonas-rivanno/" title="Liburan Asmirandah dan Jonas Rivanno, Pasangan Suami Istri yang Berawal dari Cinta Lokasi"
-                        class="wpp-post-title" target="_self">Liburan Asmirandah dan Jonas Rivanno,
-                        Pasangan Suami Istri yang Berawal dari Cinta Lokasi</a></h5>
-            </li>
-            <li>
-                <h5><a href="/5-bakso-paling-enak-di-indonesia/" title="5 Bakso Paling Enak di Indonesia" class="wpp-post-title"
-                        target="_self">5 Bakso Paling Enak di Indonesia</a></h5>
-            </li>
-        </ul>
-    </div>
+    <script type="text/javascript">
+        new Vue({
+            el: '#app',
+            data: {
+                show: false,
+            },
+            components: {
+                 'navbar': httpVueLoader('components/navbar.vue'),
+                 'slideshow':httpVueLoader('components/slideshow.vue'),
+                 'slider':httpVueLoader('components/slider.vue'),
+                 'banner':httpVueLoader('components/banneroffer.vue')
+            }
+        });
+    </script>
 </body>
+
+</html>
