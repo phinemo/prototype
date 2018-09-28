@@ -52,12 +52,12 @@
                                                     <span v-for="rating in card.rating" :key="rating" class="uk-text-center uk-margin-remove"
                                                         uk-icon="icon:star;ratio:1;"></span>
                                                 </div>
-                                                <div class="uk-width-expand">
+                                                <!-- <div class="uk-width-expand">
                                                     <ul class="uk-list uk-list-striped">
                                                         <li v-for="(highlight,index) in card.highlights" :key="index"
                                                             class="uk-padding-remove uk-text-small">{{highlight.subtitle}}</li>
                                                     </ul>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                     </div>
