@@ -125,7 +125,7 @@
                     {name:'Hot Offer',ref:'#'},
                     {name:'Popular Trips',ref:'#'},
                     {name:'Phinemo.com',ref:'#',subnav:[
-                        {subname:'articles',subref:'/article.html'},
+                        {subname:'articles',subref:'article.html'},
                         {subname:'community',subref:'#'},
                         ]},
                     {name:'About Phinemo Merchant',ref:'#'}
