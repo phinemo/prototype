@@ -17,48 +17,65 @@
                     </a>
                     <div class="uk-navbar-right">
                         <div>
-                            <a class="uk-navbar-toggle" uk-search-icon href="#" @click="hidden = !hidden"></a>
-                            <div class="uk-drop" uk-drop="mode: click; pos: left-center; offset: 0">
-                                <form class="uk-search uk-search-navbar uk-animation-sl ide-right uk-width-1-1">
-                                    <input class="uk-search-input " type="search" placeholder="Search..." autofocus>
-                                </form>
-                            </div>
+                            <a class="uk-navbar-toggle" uk-search-icon href="#modal-full" uk-toggle></a>
+
                         </div>
                     </div>
                 </nav>
             </div>
+            <!-- Modal -->
+            <div id="modal-full" class="uk-modal-full uk-animation-toggle" uk-modal>
+                <div class="uk-modal-dialog">
+                    <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+                    <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                        <div class="uk-padding uk-margin-top">
+                            <form action="">
+                                <div class="uk-grid-small">
+                                    <div class="uk-form-controls uk-margin uk-width-1-2@s">
+                                        <select name="country" id="countryid" class="uk-select">
+                                            <option v-for="(country,index) in countries" :key="index" :value="country.value">{{country.name}}</option>
+                                        </select>
+                                    </div>
+                                    <div class="uk-form-controls uk-margin uk-width-1-2@s">
+                                        <select name="category" id="categorytryid" class="uk-select">
+                                            <option v-for="(category,index) in categories" :key="index" :value="category.value">{{category.name}}</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
+                            <form class="uk-search uk-search-navbar uk-animation-sl ide-right uk-width-1-1">
+                                <div class="uk-grid-small">
+                                    <div class="uk-inline uk-width-1-1">
+                                        <a href="" class="uk-search-icon-flip" uk-search-icon></a>
+                                        <input class="uk-search-input" type="search" placeholder="Search..." autofocus>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="uk-padding-large">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Modal -->
             <div id="offcanvas-menu" uk-offcanvas="overlay:true">
                 <div class="uk-offcanvas-bar uk-flex uk-flex-column">
                     <button class="uk-offcanvas-close" type="button" uk-close></button>
-                    <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
-                        <li class="uk-active"><a href="/">HOME</a></li>
-                        <li class="uk-active"><a href="#">POPULER</a></li>
-                        <li class="uk-active">
-                            <a href="#">ARTICLE</a>
-                            <ul class="uk-nav-sub">
-                                <li><a href="category/news/">NEWS</a></li>
-                                <li><a href="category/travel-ideas/">TRAVEL IDEAS</a></li>
-                                <li><a href="category/infografik/">INFOGRAPHIC</a></li>
-                                <li><a href="category/podcast/">PODCAST</a></li>
-                                <li><a href="category/story/">STORY</a></li>
-                            </ul>
+                    <ul class="uk-nav uk-nav-primary uk-nav-center">
+                        <li v-for="(navitem,index) in navitems" :key="index" class="uk-active uk-text-uppercase"><a :href="navitem.ref">{{navitem.name}}</a>
+                        <ul class="uk-nav-sub">
+                            <li v-for="(subnav,index) in navitem.subnav" :key="index"><a :href="subnav.subref">{{subnav.subname}}</a></li>
+                        </ul>
                         </li>
-                        <li class="uk-active">
-                            <a href="#">COMMUNITY</a>
-                            <ul class="uk-nav-sub">
-                                <li><a href="s/user/login/">SIGN IN / SIGN UP</a></li>
-                                <li><a href="s/">ALL</a></li>
-                                <li><a href="s/user/rank/">TOP USER</a></li>
-                            </ul>
-                        </li>
-                        <li class="uk-nav-divider"></li>
+                        <!-- <li class="uk-nav-divider"></li>
                         <ul class="uk-nav-sub">
                             <li><a href="about/">ABOUT US</a></li>
                             <li><a href="careers/">WORK FOR US</a></li>
                             <li><a href="advertise/">ADVERTISE</a></li>
                             <li><a href="contact/">CONTACT US</a></li>
                             <li><a href="#">HELP</a></li>
-                        </ul>
+                        </ul> -->
                     </ul>
                 </div>
             </div>
@@ -73,6 +90,46 @@
                 show: false,
                 showsearch: false,
                 hidden: false,
+                countries: [{
+                        name: 'Indonesia',
+                        value: 'indonesia'
+                    },
+                    {
+                        name: 'Myanmar',
+                        value: 'myanmar'
+                    },
+                    {
+                        name: 'Japan',
+                        value: 'japan'
+                    },
+                    {
+                        name: 'Korea',
+                        value: 'korea'
+                    },
+                ],
+                categories: [{
+                        name: 'Most Popular'
+                    },
+                    {
+                        name: 'Newest'
+                    },
+                    {
+                        name: 'Best Seller'
+                    },
+                    {
+                        name: 'Low Price'
+                    },
+                ],
+                navitems:[
+                    {name:'Home',ref:'#'},
+                    {name:'Hot Offer',ref:'#'},
+                    {name:'Popular Trips',ref:'#'},
+                    {name:'Phinemo.com',ref:'#',subnav:[
+                        {subname:'articles',subref:'#'},
+                        {subname:'community',subref:'#'},
+                        ]},
+                    {name:'About Phinemo Merchant',ref:'#'}
+                ]
             }
         }
     }
