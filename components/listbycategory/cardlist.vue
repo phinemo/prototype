@@ -1,5 +1,4 @@
 <template>
-  
     <div>
         
           <hr class="uk-margin-remove-top uk-margin-medium-bottom ">

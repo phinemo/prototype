@@ -17,14 +17,13 @@
                     </a>
                     <div class="uk-navbar-right">
                         <div>
-                            <a class="uk-navbar-toggle" uk-search-icon href="#modal-full" uk-toggle></a>
-
+                            <a class="uk-navbar-toggle" uk-search-icon href="#modal-search" uk-toggle></a>
                         </div>
                     </div>
                 </nav>
             </div>
             <!-- Modal -->
-            <div id="modal-full" class="uk-modal-full uk-animation-toggle" uk-modal>
+            <div id="modal-search" class="uk-modal-full uk-animation-toggle" uk-modal>
                 <div class="uk-modal-dialog">
                     <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
                     <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
@@ -53,7 +52,6 @@
                             </form>
                         </div>
                         <div class="uk-padding-large">
-
                         </div>
                     </div>
                 </div>
