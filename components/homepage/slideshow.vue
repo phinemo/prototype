@@ -25,11 +25,11 @@ module.exports = {
     data: function(){
         return{
             covers:[
-                {url:'https://via.placeholder.com/600x300'},
-                {url:'https://via.placeholder.com/600x300'},
-                {url:'https://via.placeholder.com/600x300'},
-                {url:'https://via.placeholder.com/600x300'}
-            ]
+                {url:'img/Bali.jpg'},
+                {url:'img/Jogja.jpg'},
+                {url:'img/Lombok.jpg'},
+                {url:'img/Raja_ampat.jpg'}
+            ],
         }
     }
 }

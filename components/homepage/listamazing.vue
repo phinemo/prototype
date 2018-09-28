@@ -3,10 +3,12 @@
         <ul class="uk-slider-items uk-width-3-4 uk-child-width-1-2@s uk-child-width-1-4@m">
             <li class="uk-box-shadow-small " v-for="(offer, index) in offers" :key="index" style="padding-left: 10px;">
                 <div class=" uk-card uk-card-default uk-box-shadow-material-small uk-border-rounded">
-                    <img class="uk-border-rounded" :data-src="offer.image" :alt="offer.title" uk-img>
+                    <div class="uk-card-media-top">
+                        <img class="uk-border-rounded" :data-src="offer.image" :alt="offer.title" height="300" width="600"  uk-img>
+                    </div>
                     <div class="uk-card-body uk-padding-small">
                         <h6 class="uk-card-title uk-text-small uk-margin-small-bottom">{{offer.title}}</h6>
-                        <p class="uk-text-small uk-margin-small-bottom uk-margin-remove-top">Mulai Dari Harga {{offer.price}}</p>
+                        <p class="uk-text-small uk-margin-small-bottom uk-margin-remove-top">From IDR {{offer.price}}K</p>
                         <span v-for="rating in offer.ratings" :key="rating" uk-icon="icon: star; ratio: 0.8"></span>
                     </div>
                 </div>
@@ -21,33 +23,33 @@
         data: function () {
             return {
                 offers: [{
-                        title: 'Jalan-jalan ke ancol 20% OFF',
-                        image: 'https://via.placeholder.com/500x200',
-                        price: 'IDR:300K',
+                        title: 'JMt. Batur Sunrise Hike ',
+                        image: 'img/batur.jpg',
+                        price: '600',
                         ratings: 3
                     },
                     {
-                        title: 'Jalan-jalan ke Dufan 30% OFF',
-                        image: 'https://via.placeholder.com/500x200',
-                        price: 'IDR:500K',
+                        title: 'Ubud Cycling Tour',
+                        image: 'img/ubud_sepeda.jpg',
+                        price: '700',
                         ratings: 1
                     },
                     {
-                        title: 'Jalan-jalan ke Malioboro 10% OFF',
-                        image: 'https://via.placeholder.com/500x200',
-                        price: 'IDR:500K',
+                        title: 'Gili Meno Fun Dive Trip',
+                        image: 'img/gili_meno.jpg',
+                        price: '800',
                         ratings: 5
                     },
                     {
-                        title: 'Paket Perjalanan singapur 20% OFF',
-                        image: 'https://via.placeholder.com/500x200',
-                        price: 'IDR:700K',
+                        title: 'Dieng Plateau Golden Sunrise',
+                        image: 'img/dieng.jpg',
+                        price: '350',
                         ratings: 1
                     },
                     {
-                        title: 'Umroh, sekalian jalan-jalan 20% OFF',
-                        image: 'https://via.placeholder.com/500x200',
-                        price: 'IDR:1000K',
+                        title: 'Lava Tour Yogyakarta',
+                        image: 'img/lava_tour.jpg',
+                        price: '1000',
                         ratings: 4
                     },
 

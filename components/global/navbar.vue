@@ -126,7 +126,7 @@
                         {subname:'articles',subref:'article.html'},
                         {subname:'community',subref:'#'},
                         ]},
-                    {name:'About Phinemo Merchant',ref:'#'}
+                    {name:'Merchant',ref:'index.html'}
                 ]
             }
         }

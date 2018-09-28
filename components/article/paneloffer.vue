@@ -37,6 +37,9 @@
                             <div class="uk-card uk-card-default uk-card-hover">
                                 <div class="uk-card-header">
                                     <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                        <div class="uk-width-auto">
+                                            <img width="70" height="70" src="https://www.ccsmedia.com/media/ccs-logo.svg">
+                                        </div>
                                         <div class="uk-width-expand">
                                             <!-- Title -->
                                             <a href="showoffer.html">
@@ -45,9 +48,9 @@
                                             <!-- Highlight -->
                                             <div class="uk-grid-small uk-flex-middle" uk-grid>
                                                 <div class="uk-width-auto">
-                                                    <a href="showoffer.html" class="uk-button uk-button-primary uk-border-rounded">300$</a><br>
-                                                    <span v-for="rating in card.rating" :key="rating" class="uk-margin-remove"
-                                                        uk-icon="icon:star;ratio:0.8;"></span>
+                                                    <a href="showoffer.html" class="uk-button uk-button-primary uk-border-rounded">IDR {{card.price}}K</a><br>
+                                                    <span v-for="rating in card.rating" :key="rating" class="uk-text-center uk-margin-remove"
+                                                        uk-icon="icon:star;ratio:1;"></span>
                                                 </div>
                                                 <div class="uk-width-expand">
                                                     <ul class="uk-list uk-list-striped">
@@ -75,82 +78,82 @@
         data: function () {
             return {
                 cards: [{
-                            title: 'Bali Vocation OFF 20%',
-                            price: '300',
+                            title: 'Ayung River Rafting Adventure',
+                            price: '500',
                             imgurl: '',
                             rating: 5,
                             highlights: [{
-                                    subtitle: 'Free Pick Up'
+                                    subtitle: 'Free pickup'
                                 },
                                 {
-                                    subtitle: 'Free Wifi'
+                                    subtitle: 'Free Wi-Fi'
                                 },
                                 {
-                                    subtitle: 'Hell Yeah!!'
+                                    subtitle: 'Include Meals'
                                 }
                             ]
                         },
                         {
-                            title: 'Yogyakarta Kuliner ',
-                            price: '100',
+                            title: 'Ubud Rice Terraces, Temples, & Volcano',
+                            price: '700',
                             imgurl: '',
                             rating: 3,
                             highlights: [{
-                                    subtitle: 'Free Pick Up'
+                                    subtitle: 'Free Pickup'
                                 },
                                 {
-                                    subtitle: 'Free Wifi'
+                                    subtitle: 'Free Wi-Fi'
                                 },
                                 {
-                                    subtitle: 'Hell Yeah!!'
+                                    subtitle: 'Include Meals'
                                 }
                             ]
                         },
                         {
-                            title: 'Hey you, got me here 20%',
-                            price: '400',
+                            title: 'Snorkeling Day Trip to Nusa Lembongan',
+                            price: '1000',
                             imgurl: '',
                             rating: 4,
                             highlights: [{
-                                    subtitle: 'Free Pick Up'
+                                    subtitle: 'Free Pickup'
                                 },
                                 {
-                                    subtitle: 'Free Wifi'
+                                    subtitle: 'Free Wi-Fi'
                                 },
                                 {
-                                    subtitle: 'Hell Yeah!!'
+                                    subtitle: 'Include Meals'
                                 }
                             ]
                         },
                         {
-                            title: 'Awesome :D',
-                            price: '600',
+                            title: 'Ubud Waterfalls Tour',
+                            price: '700',
                             imgurl: '',
                             rating: 2,
                             highlights: [{
-                                    subtitle: 'Free Pick Up'
+                                    subtitle: 'Free Pickup'
                                 },
                                 {
-                                    subtitle: 'Free Wifi'
+                                    subtitle: 'Free Wi-Fi'
                                 },
                                 {
-                                    subtitle: 'Hell Yeah!!'
+                                    subtitle: 'Include Meals'
                                 }
                             ]
                         },
                         {
-                            title: 'Huho huawei',
-                            price: '300',
+                            title: 'North Bali Sunrise Tour',
+                            price: '800',
                             imgurl: '',
                             rating: 1,
                             highlights: [{
-                                    subtitle: 'Free Pick Up'
+                                    subtitle: 'Free Pickup'
                                 },
                                 {
-                                    subtitle: 'Free Wifi'
+                                    subtitle: 'Free Wi-Fi'
                                 },
                                 {
-                                    subtitle: 'Hell Yeah!!'
+                                    subtitle: 'Include Meals'
                                 }
                             ]
                         },

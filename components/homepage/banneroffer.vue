@@ -14,18 +14,18 @@
             return {
                 //url for 
                 urls: [{
-                    'site': 'https://via.placeholder.com/600x300',
-                    'name':'Tokyo',
+                    'site': 'img/Bintan.jpg',
+                    'name':'Bintan',
                     'click':true
                 },
                 {
-                    'site': 'https://via.placeholder.com/600x200',
-                    'name':'Singapore',
+                    'site': 'img/raja_ampat_banner.jpg',
+                    'name':'Raja Ampat',
                     'click':false
                 },
                 {
-                    'site': 'https://via.placeholder.com/600x100',
-                    'name':'Sydney',
+                    'site': 'img/Derawan.jpg',
+                    'name':'Derawan',
                     'click':false
                 }
             ]

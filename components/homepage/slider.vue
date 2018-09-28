@@ -22,10 +22,10 @@ module.exports = {
     data:function(){
         return{
             sliders:[
-                {title:'Yogyakarta',image:'https://via.placeholder.com/600x300'},
-                {title:'Bali',image:'https://via.placeholder.com/600x300'},
-                {title:'Jakarta',image:'https://via.placeholder.com/600x300'},
-                {title:'Surabaya',image:'https://via.placeholder.com/600x300'},
+                {title:'Magelang',image:'img/rafting_magelang.jpg'},
+                {title:'Tanjung Puting',image:'img/tanjung.jpg'},
+                {title:'Labuan Bajo',image:'img/tanjung_benoa.jpg'},
+                {title:'Bali',image:'img/tari_kecak.jpg'},
             ]
         }
     }
