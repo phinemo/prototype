@@ -2,7 +2,7 @@
     <div>
         <div v-for="(url, index) in urls" :key="index" class="uk-inline uk-height-small uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light uk-margin-bottom" :data-src="url.site" uk-img>
             <h1>{{url.name}}</h1>
-            <a v-if="url.click == true " class="uk-button uk-button-default uk-text-small uk-margin-small uk-position-bottom-right" href="">CLICK HERE</a>
+            <a v-if="url.click == true " class="uk-button uk-button-default uk-text-small uk-margin-small uk-position-bottom-right" :href="url.url">CLICK HERE</a>
         </div>
     </div>
 
@@ -16,17 +16,20 @@
                 urls: [{
                     'site': 'img/Bintan.jpg',
                     'name':'Bintan',
-                    'click':true
+                    'click':true,
+                    'url':'kategori.html'
                 },
                 {
                     'site': 'img/raja_ampat_banner.jpg',
                     'name':'Raja Ampat',
-                    'click':false
+                    'click':false,
+                    'url':'kategori.html'
                 },
                 {
                     'site': 'img/Derawan.jpg',
                     'name':'Derawan',
-                    'click':false
+                    'click':false,
+                    'url':'kategori.html'
                 }
             ]
             }

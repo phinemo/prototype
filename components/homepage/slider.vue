@@ -22,10 +22,10 @@ module.exports = {
     data:function(){
         return{
             sliders:[
-                {title:'Magelang',image:'img/rafting_magelang.jpg'},
-                {title:'Tanjung Puting',image:'img/tanjung.jpg'},
-                {title:'Labuan Bajo',image:'img/tanjung_benoa.jpg'},
-                {title:'Bali',image:'img/tari_kecak.jpg'},
+                {title:'Magelang',image:'img/rafting_magelang.jpg','url':'kategori.html'},
+                {title:'Tanjung Puting',image:'img/tanjung.jpg','url':'kategori.html'},
+                {title:'Labuan Bajo',image:'img/tanjung_benoa.jpg','url':'kategori.html'},
+                {title:'Bali',image:'img/tari_kecak.jpg','url':'kategori.html'},
             ]
         }
     }

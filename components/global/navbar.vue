@@ -2,7 +2,7 @@
     <!-- Navbar Start -->
     <div uk-grid>
         <div class="uk-width-1-1">
-            <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+            <div uk-sticky="show-on-up: true; animation: uk-animation-slide-top; bottom: #bottom">
                 <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
                     <div class="uk-navbar-left">
                         <ul class="uk-navbar-nav">
@@ -24,9 +24,9 @@
             </div>
             <!-- Modal -->
             <div id="modal-search" class="uk-modal-full uk-animation-toggle" uk-modal>
-                <div class="uk-modal-dialog">
+                <div class="uk-modal-dialog uk-panel">
                     <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
-                    <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                    <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle " uk-grid>
                         <div class="uk-padding uk-margin-top">
                             <form action="">
                                 <div class="uk-grid-small">
@@ -58,13 +58,34 @@
             </div>
             <!-- End Modal -->
             <div id="offcanvas-menu" uk-offcanvas="overlay:true">
-                <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+                <div class="uk-offcanvas-bar uk-padding-remove uk-flex uk-flex-column">
+                    <!-- <nav class="uk-navbar-container uk-dark" uk-navbar>
+                        <div class="uk-navbar-left">
+                            <ul class="uk-navbar-nav uk-margin-left">
+                                <li><img src="https://www.phinemo.com/wp-content/themes/projectav2/images/114x30xlogo-phinemo.png.pagespeed.ic.qkIeB28U-q.webp"
+                                        alt="Logo Phinemo" height="" width=""></li>
+                            </ul>
+                        </div>
+                        <div class="uk-navbar-center">
+                            <ul class="uk-navbar-nav">
+                                <li class="uk-text-lead"></li>
+                            </ul>
+                        </div>
+                        <div class="uk-navbar-right">
+                            <ul class="uk-navbar-nav">
+                                <li><button class="uk-offcanvas-close" type="button" uk-close></button></li>
+                            </ul>
+                        </div>
+                    </nav> -->
+                    <div class="uk-width-1-1" uk-grid>
                     <button class="uk-offcanvas-close" type="button" uk-close></button>
-                    <ul class="uk-nav uk-nav-primary uk-nav-center">
-                        <li v-for="(navitem,index) in navitems" :key="index" class="uk-active uk-text-uppercase"><a :href="navitem.ref">{{navitem.name}}</a>
-                        <ul class="uk-nav-sub">
-                            <li v-for="(subnav,index) in navitem.subnav" :key="index"><a :href="subnav.subref">{{subnav.subname}}</a></li>
-                        </ul>
+                    </div>
+                    <ul class="uk-nav uk-nav-default uk-nav-left uk-margin-left uk-margin-large-top">
+                        <li v-for="(navitem,index) in navitems" :key="index" class="uk-active uk-text-uppercase uk-margin-small-bottom "><a
+                                :href="navitem.ref">{{navitem.name}}</a>
+                            <ul v-for="(subnav,index) in navitem.subnav" :key="index" class="uk-nav-sub">
+                                <li><a :href="subnav.subref">{{subnav.subname}}</a></li>
+                            </ul>
                         </li>
                         <!-- <li class="uk-nav-divider"></li>
                         <ul class="uk-nav-sub">
@@ -83,7 +104,7 @@
 </template>
 <script>
     module.exports = {
-        data: function () {
+        data: () => {
             return {
                 show: false,
                 showsearch: false,
@@ -118,20 +139,51 @@
                         name: 'Low Price'
                     },
                 ],
-                navitems:[
-                    {name:'Home',ref:'#'},
-                    {name:'Hot Offer',ref:'#'},
-                    {name:'Popular Trips',ref:'#'},
-                    {name:'Phinemo.com',ref:'#',subnav:[
-                        {subname:'articles',subref:'article.html'},
-                        {subname:'community',subref:'#'},
-                        ]},
-                    {name:'Merchant',ref:'index.html'}
+                navitems: [{
+                        name: 'Home',
+                        ref: '#'
+                    },
+                    {
+                        name: 'Hot Offer',
+                        ref: '#'
+                    },
+                    {
+                        name: 'Popular Trips',
+                        ref: '#'
+                    },
+                    {
+                        name: 'Phinemo.com',
+                        ref: '#',
+                        subnav: [{
+                                subname: 'articles',
+                                subref: 'article.html'
+                            },
+                            {
+                                subname: 'community',
+                                subref: '#'
+                            },
+                            {
+                                subname:'merchant',
+                                subref:'index.html'
+                            }
+                                
+                        ]
+                    },
                 ]
             }
+        },
+        started: () => {
+            let height = document.getElementById('modal-search').style
         }
     }
 </script>
 <style scoped>
+    .uk-navbar,
+    .uk-navbar-container {
+        height: 56px;
+    }
 
+    .uk-panel {
+        height: 100% !important;
+    }
 </style>

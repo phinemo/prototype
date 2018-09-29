@@ -20,3 +20,9 @@
   a:hover{
     text-decoration: none;
   }
+  .uk-navbar-container:not(.uk-navbar-transparent){
+    height: 56px;
+  }
+ #modal-search .uk-modal-full, .uk-modal-dialog{
+    height: 100%;
+  }
