@@ -1,27 +1,19 @@
 <template>
-  
-    <div class=" uk-child-width-1-2@s uk-cover-container" uk-grid>
-                <div>
-                    <div class="uk-position-bottom-center uk-position-fixed">
-                        <div class="" style="z-index: 980;" uk-sticky="offset: 100; bottom: #top;">
-                             <div class="uk-button-group">
-                                <button class="uk-button uk-button-primary" ><span uk-icon="receiver"></span> Telpon</button>
-                                <button class="uk-button uk-button-secondary"><span uk-icon="mail"></span> Pesan</button>
-                                <button class="uk-button uk-button-danger"><span uk-icon="world"></span> Website</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div>
+        <div class=" uk-width-1-1 uk-padding-remove uk-position-fixed uk-flex-center uk-button-group" style="bottom:0px">
+            <button class="uk-button uk-button-primary uk-width-1-3 uk-button-small"><span uk-icon="receiver"></span><br>Telpon</button>
+            <button class="uk-button uk-button-secondary uk-width-1-3 uk-button-small"><span uk-icon="mail"></span><br>Pesan</button>
+            <button class="uk-button uk-button-danger uk-width-1-3 uk-button-small"><span uk-icon="world"></span><br>Website</button>
+        </div>
     </div>
-
 </template>
 
 <script>
-module.exports = {
-    data:function(){
-        return{
-            
+    module.exports = {
+        data: function () {
+            return {
+
+            }
         }
-    }
-};
+    };
 </script>

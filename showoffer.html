@@ -34,19 +34,17 @@
 
         <div class="uk-container">
             <div class="uk-margin-small-top uk-margin-small-top uk-margin-small-top">
-                <h4 class="uk-text-bold uk-margin-remove-bottom">DESKRIPSI SINGKAT</h4>
+                <h5 class="uk-text-bold uk-text uk-margin-remove-bottom">DESKRIPSI SINGKAT</h5>
             </div>
             <hr class="uk-margin-small-top uk-margin-small-bottom">
             <isiinformasi></isiinformasi>
             <accordionshowoffer></accordionshowoffer>
-            <stickyshowoffer></stickyshowoffer>
-        </div>
+            <div id="end" class="uk-margin-large-top"></div>
 
-        <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s" uk-grid>
-            <div class="uk-card-media-left uk-cover-container">
-                <canvas width="100%" height="60"></canvas>
-            </div>
         </div>
+        <div id="end" class="uk-margin-large-top"></div>
+        <div id="end" class="uk-margin-large-top"></div>
+        <stickyshowoffer></stickyshowoffer>
     </div>
 
     <script type="text/javascript">
@@ -54,9 +52,9 @@
             el: '#app',
             data: {
                 show: false,
-                offers:[
-                    {id:1,}
-                ]
+                offers: [{
+                    id: 1,
+                }]
             },
             components: {
                 'navbar': httpVueLoader('components/global/navbar.vue'),

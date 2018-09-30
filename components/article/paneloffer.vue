@@ -7,7 +7,7 @@
         </div>
         <!-- End Button Offer -->
         <div id="modal-full" class="uk-modal-full" uk-modal>
-            <div class="uk-modal-dialog uk-grid-small"  uk-grid>
+            <div class="uk-modal-dialog uk-grid-small uk-position-cover" uk-grid>
                 <div class="uk-width-1-1 uk-navbar-container " uk-navbar>
                     <div class="uk-navbar-center">
                         <ul class="uk-navbar-nav">
@@ -126,6 +126,54 @@
                         price: '700',
                         imgurl: '',
                         rating: 2,
+                        highlights: [{
+                                subtitle: 'Free Pickup'
+                            },
+                            {
+                                subtitle: 'Free Wi-Fi'
+                            },
+                            {
+                                subtitle: 'Include Meals'
+                            }
+                        ]
+                    },
+                    {
+                        title: 'North Bali Sunrise Tour',
+                        price: '800',
+                        imgurl: '',
+                        rating: 1,
+                        highlights: [{
+                                subtitle: 'Free Pickup'
+                            },
+                            {
+                                subtitle: 'Free Wi-Fi'
+                            },
+                            {
+                                subtitle: 'Include Meals'
+                            }
+                        ]
+                    },
+                    {
+                        title: 'North Bali Sunrise Tour',
+                        price: '800',
+                        imgurl: '',
+                        rating: 1,
+                        highlights: [{
+                                subtitle: 'Free Pickup'
+                            },
+                            {
+                                subtitle: 'Free Wi-Fi'
+                            },
+                            {
+                                subtitle: 'Include Meals'
+                            }
+                        ]
+                    },
+                    {
+                        title: 'North Bali Sunrise Tour',
+                        price: '800',
+                        imgurl: '',
+                        rating: 1,
                         highlights: [{
                                 subtitle: 'Free Pickup'
                             },
