@@ -11,9 +11,6 @@
                     <a class="uk-button uk-button-primary uk-button-small" uk-icon="image" title="Lebih Banyak Gambar" href="phinemo.png" data-caption="Image"></a>
                     <a class="" href="img/Bali.jpg" data-caption="Image"></a>
                     <a class="" href="img/Raja_ampat.jpg" data-caption="Image"></a>
-                    <a class="" href="gold.png" data-caption="Image"></a>
-                    <a class="" href="phinemo.png" data-caption="Image"></a>
-                    <a class="" href="gold.png" data-caption="Image"></a>
                 </div>
                 
         </div>

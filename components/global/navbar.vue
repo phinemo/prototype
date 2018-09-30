@@ -3,7 +3,7 @@
     <div uk-grid>
         <div class="uk-width-1-1">
             <div uk-sticky="show-on-up: true; animation: uk-animation-slide-top; bottom: #bottom">
-                <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
+                <nav class="uk-navbar-container uk-box-shadow-material-small" uk-navbar style="position: relative; z-index: 980;">
                     <div class="uk-navbar-left">
                         <ul class="uk-navbar-nav">
                             <li class="uk-active"><a href="" uk-toggle="target: #offcanvas-menu"><span uk-icon="menu"></span></a></li>
@@ -80,8 +80,8 @@
                     <div class="uk-width-1-1" uk-grid>
                     <button class="uk-offcanvas-close" type="button" uk-close></button>
                     </div>
-                    <ul class="uk-nav uk-nav-default uk-nav-left uk-margin-left uk-margin-large-top">
-                        <li v-for="(navitem,index) in navitems" :key="index" class="uk-active uk-text-uppercase uk-margin-small-bottom "><a
+                    <ul class="uk-nav uk-nav-default uk-nav-left uk-margin-left uk-margin-large-top uk-list uk-list-divider">
+                        <li v-for="(navitem,index) in navitems" :key="index" class=" uk-active uk-text-uppercase uk-margin-small-bottom "><a
                                 :href="navitem.ref">{{navitem.name}}</a>
                             <ul v-for="(subnav,index) in navitem.subnav" :key="index" class="uk-nav-sub">
                                 <li><a :href="subnav.subref">{{subnav.subname}}</a></li>

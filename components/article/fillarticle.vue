@@ -1,9 +1,9 @@
 <template>
     <div class="uk-container">
         <div class="uk-grid">
-            <div class="uk-width-1-1">
+            <div class="uk-width-1-1 uk-margin-top">
                 <article class="uk-article">
-                    <h1 class="uk-article-header">Tak
+                    <h1 class="uk-article-header uk-text-lead">Tak
                         Perlu Khawatir Bila Ternyata Pilot Tidur selama Penerbangan</h1>
                     <p class="uk-article-meta"><i>Agustus lalu, penumpang United Airlines menangkap foto pilot
                             tidur di luar kokpit selama 90 menit. Foto tersebar dan seketika dunia maya heboh
@@ -12,7 +12,6 @@
                     <img data-src="https://via.placeholder.com/1920x1080" alt="" width="1920" height="1080" uk-img>
                     <p class="uk-article-meta uk-margin-remove-top uk-margin-bottom"><cite>Ilustrasi Awak
                             Penerbang Tertidur (Foto/Basith Subastian)</cite></p>
-
                     <p class="uk-text-justify"> Mengutip <em>Travel and Leisure</em> pada Senin (17/9), pada bulan
                         Agustus kemarin
                         terjadi “drama di udara” ketika seorang pilot United Airlines tertangkap kamera
