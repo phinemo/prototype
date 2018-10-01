@@ -81,8 +81,8 @@
                     <button class="uk-offcanvas-close" type="button" uk-close></button>
                     </div>
                     <ul class="uk-nav uk-nav-default uk-nav-left uk-margin-left uk-margin-large-top uk-list uk-list-divider">
-                        <li v-for="(navitem,index) in navitems" :key="index" class=" uk-active uk-text-uppercase uk-margin-small-bottom "><a
-                                :href="navitem.ref">{{navitem.name}}</a>
+                        <li v-for="(navitem,index) in navitems" :key="index" class=" uk-active uk-text-uppercase uk-margin-small-bottom uk-text-small"><p><a
+                                :href="navitem.ref">{{navitem.name}}</a></p>
                             <ul v-for="(subnav,index) in navitem.subnav" :key="index" class="uk-nav-sub">
                                 <li><a :href="subnav.subref">{{subnav.subname}}</a></li>
                             </ul>
@@ -172,9 +172,6 @@
                 ]
             }
         },
-        started: () => {
-            let height = document.getElementById('modal-search').style
-        }
     }
 </script>
 <style scoped>

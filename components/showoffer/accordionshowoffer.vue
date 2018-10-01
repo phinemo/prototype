@@ -1,6 +1,6 @@
 <template>
     <div>
-        <ul uk-accordion>
+        <ul uk-accordion class="uk-text-small[">
             <li class="uk-open">
                 <hr class="uk-margin-small-top uk-margin-small-bottom">
                 <a class="uk-accordion-title uk-text-bold" style="font-size: 16px;" href="#"> HIGHLIGHT</a>

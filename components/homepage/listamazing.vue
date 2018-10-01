@@ -1,7 +1,7 @@
 <template>
-    <div class="uk-position-relative uk-visible-toggle" uk-slider>
+    <div class="uk-position-relative uk-visible-toggle uk-margin-small" uk-slider>
         <ul class="uk-slider-items uk-width-3-4 uk-child-width-1-2@s uk-child-width-1-4@m">
-            <li class="uk-margin-small-right" v-for="(offer, index) in offers" :key="index">
+            <li class="uk-margin-small-right uk-margin-small-bottom" v-for="(offer, index) in offers" :key="index">
                 <div class=" uk-card uk-card-default uk-box-shadow-material-small uk-border-rounded">
                     <div class="uk-card-media-top">
                         <a :href="offer.url"><img class="uk-border-rounded" :data-src="offer.image" :alt="offer.title" height="300" width="600"  uk-img></a>
@@ -14,7 +14,7 @@
                 </div>
             </li>
         </ul>
-        <hr style="margin-top: 30px; margin-bottom: 10px;">
+        
     </div>
 </template>
 
@@ -23,7 +23,7 @@
         data: function () {
             return {
                 offers: [{
-                        title: 'JMt. Batur Sunrise Hike ',
+                        title: 'Mt. Batur Sunrise Hike ',
                         image: 'img/batur.jpg',
                         price: '600',
                         ratings: 3,
