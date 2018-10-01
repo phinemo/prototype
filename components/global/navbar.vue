@@ -81,10 +81,10 @@
                     <button class="uk-offcanvas-close" type="button" uk-close></button>
                     </div>
                     <ul class="uk-nav uk-nav-default uk-nav-left uk-margin-left uk-margin-large-top uk-list uk-list-divider">
-                        <li v-for="(navitem,index) in navitems" :key="index" class=" uk-active uk-text-uppercase uk-margin-small-bottom uk-text-small"><p><a
+                        <li v-for="(navitem,index) in navitems" :key="index" class=" uk-active uk-text-uppercase uk-margin-small-bottom uk-text-small"><p class="uk-margin-remove-bottom"><a
                                 :href="navitem.ref">{{navitem.name}}</a></p>
-                            <ul v-for="(subnav,index) in navitem.subnav" :key="index" class="uk-nav-sub">
-                                <li><a :href="subnav.subref">{{subnav.subname}}</a></li>
+                            <ul v-for="(subnav,index) in navitem.subnav" :key="index" class="uk-nav-sub uk-margin-remove">
+                                <li><h6 class="uk-text-uppercase uk-margin-remove-bottom"><a :href="subnav.subref">{{subnav.subname}}</a></h6></li>
                             </ul>
                         </li>
                         <!-- <li class="uk-nav-divider"></li>
@@ -140,34 +140,20 @@
                     },
                 ],
                 navitems: [{
-                        name: 'Home',
+                        name: 'login',
                         ref: '#'
                     },
                     {
-                        name: 'Hot Offer',
+                        name: 'articles',
+                        ref: 'article.html'
+                    },
+                    {
+                        name: 'trips',
                         ref: '#'
                     },
                     {
-                        name: 'Popular Trips',
-                        ref: '#'
-                    },
-                    {
-                        name: 'Phinemo.com',
+                        name: 'help',
                         ref: '#',
-                        subnav: [{
-                                subname: 'articles',
-                                subref: 'article.html'
-                            },
-                            {
-                                subname: 'community',
-                                subref: '#'
-                            },
-                            {
-                                subname:'merchant',
-                                subref:'index.html'
-                            }
-                                
-                        ]
                     },
                 ]
             }
