@@ -22,7 +22,7 @@
     module.exports = {
         data: function () {
             return {
-                sider1s: [{
+                slider1s: [{
                         title: 'JMt. Batur Sunrise Hike ',
                         image: 'img/batur.jpg',
                         price: '600',
