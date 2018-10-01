@@ -30,3 +30,6 @@
  #modal-search .uk-modal-full, .uk-modal-dialog{
     height: 100%;
   }
+  i.fa-star{
+    color: gold;
+  }

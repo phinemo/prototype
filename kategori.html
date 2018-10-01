@@ -33,40 +33,44 @@
         <br class="uk-margin-small-top uk-margin-small-top uk-margin-small-bottom">
         <div class="uk-container">
             <infokategori></infokategori>
-        </div>
-        <div class="uk-container">
             <div class="uk-margin-small-bottom">
                 <h5 class="uk-text-bold uk-margin-remove-bottom uk-heading-line"><span>Tempat Wisata Terbaik Di Semarang</span></h5>
             </div>
         </div>
-        <sliderkategori1></sliderkategori1>
-        <button class="uk-button uk-width-1-1 uk-margin-small-bottom" style="color: orange; border: 2px solid orange; background-color: white;">Cek
-            Semua Wisata Terbaik</button>
-        <br class="uk-margin-small-top uk-margin-small-bottom">
+        <div class="uk-container">
+            <buttonwisata class="uk-text-uppercase" :title="btnwis"></buttonwisata>
+        </div>
+        <div class="uk-container uk-padding-remove-right">
+            <sliderkategori1></sliderkategori1>
+        </div>
+        <div class="uk-container">
+            <buttonwisata :title="btnpenawaran"></buttonwisata>
+        </div>
         <div class="uk-container">
             <div class="uk-margin-small-bottom">
                 <h5 class="uk-text-bold uk-margin-remove-bottom uk-heading-line"><span>Best Seller</span></h5>
             </div>
         </div>
-        <br class="uk-margin-small-top uk-margin-small-bottom">
-        <sliderkategori2></sliderkategori2>
-        <button class="uk-button uk-width-1-1 uk-margin-small-bottom" style="color: orange; border: 2px solid orange; background-color: white;">Lihat
-            Semua Best Seller</button>
-        <br class="uk-margin-small-top uk-margin-small-bottom">
+        <div class="uk-container uk-padding-remove-right">
+            <sliderkategori1></sliderkategori1>
+        </div>
+        
     </div>
     <script type="text/javascript">
         new Vue({
             el: '#app',
             data: {
                 show: false,
+                btnwis:'cek semua wisata terbaik',
+                btnpenawaran:'cek semua penawaran'
             },
             components: {
                  'navbar': httpVueLoader('components/global/navbar.vue'),
                  'bannerkategori': httpVueLoader('components/kategori/bannerkategori.vue'),
                  'infokategori': httpVueLoader('components/kategori/infokategori.vue'),
-                 'sliderkategori1': httpVueLoader('components/kategori/sliderkategori1.vue'),
-                 'sliderkategori2': httpVueLoader('components/kategori/sliderkategori2.vue'),
-            }
+                 'sliderkategori1':httpVueLoader('components/homepage/listamazing.vue'),
+                 'buttonwisata':httpVueLoader('components/global/buttonfullwidth.vue')
+            },
         });
     </script>
 </body>

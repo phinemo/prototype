@@ -46,7 +46,7 @@
                                                     <a href="showoffer.html" class="uk-button uk-button-primary uk-button-small uk-border-rounded">IDR
                                                         {{card.price}}K</a><br>
                                                     <span v-for="rating in card.rating" :key="rating" class="uk-text-center uk-margin-remove"
-                                                        uk-icon="icon:star;ratio:1;"></span>
+                                                        uk-icon="icon:star;ratio:0.8;"></span>
                                                 </div>
                                                 <!-- <div class="uk-width-expand">
                                                     <ul class="uk-list uk-list-striped">
