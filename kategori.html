@@ -37,15 +37,14 @@
                 <h5 class="uk-text-bold uk-margin-remove-bottom uk-heading-line"><span>Tempat Wisata Terbaik Di Semarang</span></h5>
             </div>
         </div>
-        <div class="uk-container">
-            <buttonwisata class="uk-text-uppercase" :title="btnwis"></buttonwisata>
-        </div>
+        
         <div class="uk-container uk-padding-remove-right">
             <sliderkategori1></sliderkategori1>
         </div>
         <div class="uk-container">
-            <buttonwisata :title="btnpenawaran"></buttonwisata>
+            <buttonwisata class="uk-text-uppercase" :title="btnwis"></buttonwisata>
         </div>
+        
         <div class="uk-container">
             <div class="uk-margin-small-bottom">
                 <h5 class="uk-text-bold uk-margin-remove-bottom uk-heading-line"><span>Best Seller</span></h5>
@@ -54,15 +53,17 @@
         <div class="uk-container uk-padding-remove-right">
             <sliderkategori1></sliderkategori1>
         </div>
-        
+        <div class="uk-container">
+            <buttonwisata :title="btnpenawaran"></buttonwisata>
+        </div>
     </div>
     <script type="text/javascript">
         new Vue({
             el: '#app',
             data: {
                 show: false,
-                btnwis:'cek semua wisata terbaik',
-                btnpenawaran:'cek semua penawaran'
+                btnwis:{name:'cek semua wisata terbaik',url:'listbycategory.html'},
+                btnpenawaran:{name:'cek semua penawaran',url:'listbycategory.html'}
             },
             components: {
                  'navbar': httpVueLoader('components/global/navbar.vue'),
