@@ -7,101 +7,66 @@
          </div>
          <hr class="uk-margin-remove-top uk-margin-small-bottom">
        
-            <div class="uk-card uk-card-default">
-                                <div class="uk-card-media-top">
-                                    <img class="uk-width-1-1 uk-height-max-medium" src="https://via.placeholder.com/600x300" uk-height-viewport="offset-top: true; offset-bottom: 100" alt="">
-                                </div>
-                        <div class="uk-card-body">
-                                    <h6 class="uk-card-title uk-text-bold" style="font-size: 18px;">Judul Penawaran 1</h6>
-                                      <p class="uk-margin-remove-bottom">Mulai Dari Harga</p>
-                                      <span uk-icon="icon: star; ratio: 0.8"></span>
-                                      <span uk-icon="icon: star; ratio: 0.8"></span>
-                                      <span uk-icon="icon: star; ratio: 0.8"></span>
-                                      <span uk-icon="icon: star; ratio: 0.8"></span>
-                                      <span uk-icon="icon: star; ratio: 0.8"></span>
-                        </div>
+            <div class="uk-card uk-card-default uk-box-shadow-material-small uk-border-rounded uk-margin-small-right uk-margin-small-bottom uk-container" v-for="(card, index) in cards" :key="index">
+                    <div class="uk-card-media-top">
+                        <a :href="card.url"><img class="uk-border-rounded uk-width-1-1" :data-src="card.image" :alt="card.title"
+                                uk-img></a>
+                        <span class="uk-label uk-margin-right uk-margin-small-top uk-margin-remove-bottom uk-margin-small-left" style="bottom:15px; font-size:8px;">Popular</span>
+                    </div>
+                    <div class="uk-card-body uk-padding-small">
+                        <h5 class="uk-margin-remove-bottom uk-text-bold"><a class="uk-text-muted" :href="card.url">{{card.title}}</a></h5>
+                        <p class="uk-text-small uk-margin-small-bottom uk-margin-remove-top">From IDR {{card.price}}K</p>
+                        <i v-for="rating in card.ratings" :key="rating" class="fa fa-star" aria-hidden="true" ></i>
+                    </div>
             </div>
     
-        <hr class="uk-margin-remove-top uk-margin-small-bottom">
-       
-            <div class="uk-card uk-card-default">
-                                <div class="uk-card-media-top">
-                                    <img class="uk-width-1-1 uk-height-max-medium" src="https://via.placeholder.com/600x300" uk-height-viewport="offset-top: true; offset-bottom: 100" alt="">
-                                </div>
-                        <div class="uk-card-body">
-                                    <h6 class="uk-card-title uk-text-bold" style="font-size: 18px;">Judul Penawaran 2</h6>
-                                      <p class="uk-margin-remove-bottom">Mulai Dari Harga</p>
-                                      <span uk-icon="icon: star; ratio: 0.8"></span>
-                                      <span uk-icon="icon: star; ratio: 0.8"></span>
-                                      <span uk-icon="icon: star; ratio: 0.8"></span>
-                                      <span uk-icon="icon: star; ratio: 0.8"></span>
-                                      <span uk-icon="icon: star; ratio: 0.8"></span>
-                        </div>
-            </div>
-
-            <hr class="uk-margin-remove-top uk-margin-small-bottom">
-       
-            <div class="uk-card uk-card-default">
-                                <div class="uk-card-media-top">
-                                    <img class="uk-width-1-1 uk-height-max-medium" src="https://via.placeholder.com/600x300" uk-height-viewport="offset-top: true; offset-bottom: 100" alt="">
-                                </div>
-                        <div class="uk-card-body">
-                                    <h6 class="uk-card-title uk-text-bold" style="font-size: 18px;">Judul Penawaran 3</h6>
-                                      <p class="uk-margin-remove-bottom">Mulai Dari Harga</p>
-                                      <span uk-icon="icon: star; ratio: 0.8"></span>
-                                      <span uk-icon="icon: star; ratio: 0.8"></span>
-                                      <span uk-icon="icon: star; ratio: 0.8"></span>
-                                      <span uk-icon="icon: star; ratio: 0.8"></span>
-                                      <span uk-icon="icon: star; ratio: 0.8"></span>
-                        </div>
-            </div>
-
-            <hr class="uk-margin-remove-top uk-margin-small-bottom">
-       
-            <div class="uk-card uk-card-default">
-                                <div class="uk-card-media-top">
-                                    <img class="uk-width-1-1 uk-height-max-medium" src="https://via.placeholder.com/600x300" uk-height-viewport="offset-top: true; offset-bottom: 100" alt="">
-                                </div>
-                        <div class="uk-card-body">
-                                    <h6 class="uk-card-title uk-text-bold" style="font-size: 18px;">Judul Penawaran 4</h6>
-                                      <p class="uk-margin-remove-bottom">Mulai Dari Harga</p>
-                                      <span uk-icon="icon: star; ratio: 0.8"></span>
-                                      <span uk-icon="icon: star; ratio: 0.8"></span>
-                                      <span uk-icon="icon: star; ratio: 0.8"></span>
-                                      <span uk-icon="icon: star; ratio: 0.8"></span>
-                                      <span uk-icon="icon: star; ratio: 0.8"></span>
-                        </div>
-            </div>
-
-            <hr class="uk-margin-remove-top uk-margin-small-bottom">
-       
-            <div class="uk-card uk-card-default">
-                                <div class="uk-card-media-top">
-                                    <img class="uk-width-1-1 uk-height-max-medium" src="https://via.placeholder.com/600x300" uk-height-viewport="offset-top: true; offset-bottom: 100" alt="">
-                                </div>
-                        <div class="uk-card-body">
-                                    <h6 class="uk-card-title uk-text-bold" style="font-size: 18px;">Judul Penawaran 5</h6>
-                                      <p class="uk-margin-remove-bottom">Mulai Dari Harga</p>
-                                      <span uk-icon="icon: star; ratio: 0.8"></span>
-                                      <span uk-icon="icon: star; ratio: 0.8"></span>
-                                      <span uk-icon="icon: star; ratio: 0.8"></span>
-                                      <span uk-icon="icon: star; ratio: 0.8"></span>
-                                      <span uk-icon="icon: star; ratio: 0.8"></span>
-                        </div>
-            </div>
-
-            <hr class="uk-margin-remove-top uk-margin-small-bottom">
-
+             
     </div>
 
 </template>
 
 <script>
-module.exports = {
-    data:function(){
-        return{
-            
+    module.exports = {
+        data: function () {
+            return {
+                cards: [{
+                        title: 'Mt. Batur Sunrise Hike ',
+                        image: 'img/batur.jpg',
+                        price: '600',
+                        ratings: 3,
+                        url: 'showoffer.html'
+                    },
+                    {
+                        title: 'Ubud Cycling Tour',
+                        image: 'img/ubud_sepeda.jpg',
+                        price: '700',
+                        ratings: 1,
+                        url: 'showoffer.html'
+                    },
+                    {
+                        title: 'Gili Meno Fun Dive Trip',
+                        image: 'img/gili_meno.jpg',
+                        price: '800',
+                        ratings: 5,
+                        url: 'showoffer.html'
+                    },
+                    {
+                        title: 'Dieng Plateau Golden Sunrise',
+                        image: 'img/dieng.jpg',
+                        price: '350',
+                        ratings: 1,
+                        url: 'showoffer.html'
+                    },
+                    {
+                        title: 'Lava Tour Yogyakarta',
+                        image: 'img/lava_tour.jpg',
+                        price: '1000',
+                        ratings: 4,
+                        url: 'showoffer.html'
+                    },
+
+                ]
+            }
         }
-    }
-};
+    };
 </script>
