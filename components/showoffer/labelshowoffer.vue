@@ -1,12 +1,18 @@
 <template>
   
     <div class="uk-margin-small-bottom uk-margin-small-top">
+
+        <div>
+
+            <span class="uk-label uk-label-success" style="font-size:10px;">Special Offer</span>
+
+            <span class="uk-label uk-label-warning" style="font-size:10px;" >Best Seller</span>
+
+            <span class="uk-label uk-label-danger" style="font-size:10px;">Top-rated</span> 
+
+        </div>
             
-        <span class="uk-label uk-label-success">Special Offer</span>
-
-        <span class="uk-label uk-label-warning">Best Seller</span>
-
-        <span class="uk-label uk-label-danger">Top-rated</span> 
+     
     </div>
 
 </template>
@@ -15,7 +21,7 @@
 module.exports = {
     data:function(){
         return{
-            
+
         }
     }
 };

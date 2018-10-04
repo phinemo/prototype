@@ -38,7 +38,7 @@
                         price: '700',
                         ratings: 1,
                         label: 'Best Seller',
-                        url: 'showoffer.html'
+                        url: 'showoffer_bk.html'
                     },
                     {
                         title: 'Gili Meno Fun Dive Trip',
@@ -54,7 +54,7 @@
                         price: '350',
                         ratings: 1,
                         label: 'Popular',
-                        url: 'showoffer.html'
+                        url: 'showoffer_bk.html'
                     },
                     {
                         title: 'Lava Tour Yogyakarta',
