@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CDN CSS 'UiKit' -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.16/css/uikit.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Local CSS 'Vuikit' -->
+    <!-- <link rel="stylesheet" href="css/vuikit.min.css"> -->
+    <link rel="stylesheet" href="css/main.css">
+    <!--  CDN JS 'UIKit && UIKit Icon' -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.16/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.16/js/uikit-icons.min.js"></script>
+    <!-- CDN JS 'Vue' -->
+    <script src="https://unpkg.com/vue"></script>
+    <!-- CDN JS 'Vue Extension Loader' -->
+    <script src="https://unpkg.com/http-vue-loader"></script>
+    <!-- Local JS 'Vui Kit' -->
+    <!-- <script src="js/vuikit.min.js"></script> -->
+    <!-- <script src="js/vuikit-icons.min.js"></script> -->
+</head>
+
+<body>
+    <div id="app" class="uk-container-expand">
+        <navbar></navbar>
+        <div class="uk-container uk-margin-small-top uk-margin-small-bottom">
+            <labelshowoffer></labelshowoffer>
+            <judulshowoffer></judulshowoffer>
+        </div>
+        
+        <bannershowoffer></bannershowoffer>
+        
+        <div class="uk-container uk-margin-small-top">
+                
+            <div class="uk-margin-small-top uk-margin-small-top uk-margin-small-top">
+                <h5 class="uk-text-bold uk-text uk-margin-remove-bottom">DESKRIPSI SINGKAT</h5>
+            </div>
+            <hr class="uk-margin-small-top uk-margin-small-bottom">
+            <isiinformasi></isiinformasi>
+            <accordionshowoffer></accordionshowoffer>
+            <div id="end" class="uk-margin-large-top"></div>
+
+        </div>
+        <div id="end" class="uk-margin-large-top"></div>
+        <div id="end" class="uk-margin-large-top"></div>
+        <stickyshowoffer></stickyshowoffer>
+    </div>
+
+    <script type="text/javascript">
+        new Vue({
+            el: '#app',
+            data: {
+                show: false,
+                offers: [{
+                    id: 1,
+                }]
+            },
+            components: {
+                'navbar': httpVueLoader('components/global/navbar.vue'),
+                'bannershowoffer': httpVueLoader('components/showoffer/bannershowoffer.vue'),
+                'labelshowoffer': httpVueLoader('components/showoffer/labelshowoffer.vue'),
+                'judulshowoffer': httpVueLoader('components/showoffer/judulshowoffer.vue'),
+                'isiinformasi': httpVueLoader('components/showoffer/isiinformasi.vue'),
+                'accordionshowoffer': httpVueLoader('components/showoffer/accordionshowoffer.vue'),
+                'stickyshowoffer': httpVueLoader('components/showoffer/stickyshowoffer.vue'),
+            }
+        });
+    </script>
+</body>
+
+</html>

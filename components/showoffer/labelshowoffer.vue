@@ -1,6 +1,6 @@
 <template>
   
-    <div class=" uk-align-center uk-text-center">
+    <div class="uk-margin-small-bottom uk-margin-small-top">
             
         <span class="uk-label uk-label-success">Special Offer</span>
 

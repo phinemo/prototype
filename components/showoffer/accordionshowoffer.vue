@@ -44,17 +44,7 @@
                         <li>Pembatalan H-1, tidak ada pengembalian</li>
                     </ul>
                 </div>
-            </li>
-            <li>
-                <hr class="uk-margin-small-top uk-margin-small-bottom">
-                <a class="uk-accordion-title uk-text-bold" style="font-size: 16px;" href="#">HARGA</a>
-                <div class="uk-accordion-content">
-                    <ul class="uk-list uk-list-bullet">
-                        <li>IDR 500K</li>
-                        
-                    </ul>
-                </div>
-            </li>            
+            </li>           
         </ul>
 
     </div>
