@@ -7,11 +7,11 @@
          </div>
          <hr class="uk-margin-remove-top uk-margin-small-bottom">
        
-            <div class="uk-card uk-card-default uk-box-shadow-material-small uk-border-rounded uk-margin-small-right uk-margin-small-bottom uk-container" v-for="(card, index) in cards" :key="index">
+            <div class="uk-card uk-card-default uk-box-shadow-material-small uk-border-rounded uk-margin-small-bottom" v-for="(card, index) in cards" :key="index">
                     <div class="uk-card-media-top">
                         <a :href="card.url"><img class="uk-border-rounded uk-width-1-1" :data-src="card.image" :alt="card.title"
                                 uk-img></a>
-                        <span class="uk-label uk-margin-right uk-margin-small-top uk-margin-remove-bottom uk-margin-small-left" style="bottom:15px; font-size:8px;">Popular</span>
+                        <span class="uk-label uk-margin-right uk-margin-small-top uk-margin-remove-bottom uk-margin-small-left" style="bottom:15px; font-size:10px;">{{card.labels}}</span>
                     </div>
                     <div class="uk-card-body uk-padding-small">
                         <h5 class="uk-margin-remove-bottom uk-text-bold"><a class="uk-text-muted" :href="card.url">{{card.title}}</a></h5>
@@ -34,6 +34,7 @@
                         image: 'img/batur.jpg',
                         price: '600',
                         ratings: 3,
+                        labels: 'Top Rated',
                         url: 'showoffer.html'
                     },
                     {
@@ -41,6 +42,7 @@
                         image: 'img/ubud_sepeda.jpg',
                         price: '700',
                         ratings: 1,
+                        labels: 'Best Seller',
                         url: 'showoffer.html'
                     },
                     {
@@ -48,6 +50,7 @@
                         image: 'img/gili_meno.jpg',
                         price: '800',
                         ratings: 5,
+                        labels: 'Spesial Offer',
                         url: 'showoffer.html'
                     },
                     {
@@ -55,6 +58,7 @@
                         image: 'img/dieng.jpg',
                         price: '350',
                         ratings: 1,
+                        labels: 'Popular',
                         url: 'showoffer.html'
                     },
                     {
@@ -62,6 +66,7 @@
                         image: 'img/lava_tour.jpg',
                         price: '1000',
                         ratings: 4,
+                        labels: 'Popular',
                         url: 'showoffer.html'
                     },
 
