@@ -8,7 +8,7 @@
         <!-- End Button Offer -->
         <div id="modal-full" class="uk-modal-full" uk-modal>
             <div class="uk-modal-dialog uk-grid-small uk-position-cover" uk-grid>
-                <div class="uk-width-1-1 uk-navbar-container " uk-navbar>
+                <div class="uk-width-1-1 uk-navbar-container" uk-navbar>
                     <div class="uk-navbar-center">
                         <ul class="uk-navbar-nav">
                             <li class="uk-text">Special Offer</li>
@@ -20,33 +20,32 @@
                         </ul>
                     </div>
                 </div>
-                <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle">
+                <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle ">
                     <!-- Offer List -->
-                    <div class="uk-grid-small uk-animation-fade uk-flex-center uk-child-width-1-9 uk-child-width-1-2@s uk-child-width-1-3@m uk-margin-small"
-                        uk-scrollspy="cls: uk-animation-fade; target: > div > .uk-card; delay: 400; repeat: true"
-                        uk-grid>
+                    <div class="uk-grid-small uk-animation-fade uk-flex-center uk-child-width-1-9 uk-child-width-1-2@s uk-child-width-1-3@m uk-margin-small" 
+                    :style="c_offer" uk-grid>
                         <!-- Card Offer -->
                         <!-- <div class="uk-panel uk-panel-box"> -->
                         <!-- Make zero margin, sticky between "offer", there's no space -->
-                        <div class="offer" v-for="(card,index) in cards" :key="index">
-                            <div class="uk-card uk-border-rounded uk-box-shadow-material-small">
-                                <div class="uk-card-header" >
-                                    <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                        <div class="uk-width-auto">
-                                            <img width="80" src="https://www.ccsmedia.com/media/ccs-logo.svg" :style="thumbnail">
+                        <div class="offer" v-for="(card,index) in cards" :key="index" >
+                            <div class="uk-card uk-border-rounded uk-box-shadow-material-small uk-padding-remove">
+                                <div class="uk-card-header uk-padding-remove-right uk-padding-remove-left uk-margin-small-left">
+                                    <div class="uk-grid-small uk-flex-middle uk-width-1-1" uk-grid>
+                                        <div class="uk-width-1-3">
+                                            <img class="" :src="card.imgurl" :style="thumbnail">
                                         </div>
                                         <div class="uk-width-expand">
                                             <!-- Title -->
                                             <a href="showoffer.html">
-                                                <h4 class=" uk-margin-remove-bottom uk-text-small">{{card.title}}</h4>
+                                                <h6 class=" uk-margin-remove-bottom uk-text-small uk-text-bold">{{card.title}}</h6>
                                             </a>
                                             <!-- Highlight -->
                                             <div class="uk-grid-small uk-flex-middle" uk-grid>
                                                 <div class="uk-width-auto">
-                                                    <a href="showoffer.html" class="uk-button uk-button-primary uk-button-small uk-border-rounded">IDR
-                                                        {{card.price}}K</a><br>
-                                                    <span v-for="rating in card.rating" :key="rating" class="uk-text-center uk-margin-remove"
-                                                        uk-icon="icon:star;ratio:0.8;"></span>
+                                                    <a href="showoffer.html" class="uk-text-meta uk-text-small" :style="c_price"> From
+                                                        {{card.price}}K IDR</a><br>
+                                                    <i v-for="rating in card.rating" :key="rating" class="uk-text-center uk-margin-remove fa fa-star"
+                                                        ></i>
                                                 </div>
                                                 <!-- <div class="uk-width-expand">
                                                     <ul class="uk-list uk-list-striped">
@@ -76,7 +75,7 @@
                 cards: [{
                         title: 'Ayung River Rafting Adventure',
                         price: '500',
-                        imgurl: '',
+                        imgurl: 'img/batur.jpg',
                         rating: 5,
                         highlights: [{
                                 subtitle: 'Free pickup'
@@ -92,7 +91,7 @@
                     {
                         title: 'Ubud Rice Terraces, Temples, & Volcano',
                         price: '700',
-                        imgurl: '',
+                        imgurl: 'img/ubud_sepeda.jpg',
                         rating: 3,
                         highlights: [{
                                 subtitle: 'Free Pickup'
@@ -108,7 +107,7 @@
                     {
                         title: 'Snorkeling Day Trip to Nusa Lembongan',
                         price: '1000',
-                        imgurl: '',
+                        imgurl: 'img/gili_meno.jpg',
                         rating: 4,
                         highlights: [{
                                 subtitle: 'Free Pickup'
@@ -124,7 +123,7 @@
                     {
                         title: 'Ubud Waterfalls Tour',
                         price: '700',
-                        imgurl: '',
+                        imgurl: 'img/dieng.jpg',
                         rating: 2,
                         highlights: [{
                                 subtitle: 'Free Pickup'
@@ -140,7 +139,7 @@
                     {
                         title: 'North Bali Sunrise Tour',
                         price: '800',
-                        imgurl: '',
+                        imgurl: 'img/lava_tour.jpg',
                         rating: 1,
                         highlights: [{
                                 subtitle: 'Free Pickup'
@@ -156,7 +155,7 @@
                     {
                         title: 'North Bali Sunrise Tour',
                         price: '800',
-                        imgurl: '',
+                        imgurl: 'img/lava_tour.jpg',
                         rating: 1,
                         highlights: [{
                                 subtitle: 'Free Pickup'
@@ -172,7 +171,7 @@
                     {
                         title: 'North Bali Sunrise Tour',
                         price: '800',
-                        imgurl: '',
+                        imgurl: 'img/lava_tour.jpg',
                         rating: 1,
                         highlights: [{
                                 subtitle: 'Free Pickup'
@@ -188,7 +187,7 @@
                     {
                         title: 'North Bali Sunrise Tour',
                         price: '800',
-                        imgurl: '',
+                        imgurl: 'img/lava_tour.jpg',
                         rating: 1,
                         highlights: [{
                                 subtitle: 'Free Pickup'
@@ -202,7 +201,9 @@
                         ]
                     },
                 ],
-                thumbnail: {width:'100%','max-width': '80px'},
+                c_offer :{background:'#fff'},
+                c_price :{color:"black"},
+                thumbnail: {width:'100%',height:'100px'},
                 nopaddinghr:{'padding-left':'0px','padding-right':'0px'}
 
             }
