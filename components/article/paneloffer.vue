@@ -20,10 +20,10 @@
                         </ul>
                     </div>
                 </div>
-                <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle ">
+                <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" :style="c_offer" >
                     <!-- Offer List -->
                     <div class="uk-grid-small uk-animation-fade uk-flex-center uk-child-width-1-9 uk-child-width-1-2@s uk-child-width-1-3@m uk-margin-small" 
-                    :style="c_offer" uk-grid>
+                     uk-grid>
                         <!-- Card Offer -->
                         <!-- <div class="uk-panel uk-panel-box"> -->
                         <!-- Make zero margin, sticky between "offer", there's no space -->
@@ -153,10 +153,26 @@
                         ]
                     },
                     {
-                        title: 'North Bali Sunrise Tour',
-                        price: '800',
-                        imgurl: 'img/lava_tour.jpg',
-                        rating: 1,
+                        title: 'Ayung River Rafting Adventure',
+                        price: '500',
+                        imgurl: 'img/batur.jpg',
+                        rating: 5,
+                        highlights: [{
+                                subtitle: 'Free pickup'
+                            },
+                            {
+                                subtitle: 'Free Wi-Fi'
+                            },
+                            {
+                                subtitle: 'Include Meals'
+                            }
+                        ]
+                    },
+                    {
+                        title: 'Ubud Rice Terraces, Temples, & Volcano',
+                        price: '700',
+                        imgurl: 'img/ubud_sepeda.jpg',
+                        rating: 3,
                         highlights: [{
                                 subtitle: 'Free Pickup'
                             },
@@ -169,10 +185,26 @@
                         ]
                     },
                     {
-                        title: 'North Bali Sunrise Tour',
-                        price: '800',
-                        imgurl: 'img/lava_tour.jpg',
-                        rating: 1,
+                        title: 'Snorkeling Day Trip to Nusa Lembongan',
+                        price: '1000',
+                        imgurl: 'img/gili_meno.jpg',
+                        rating: 4,
+                        highlights: [{
+                                subtitle: 'Free Pickup'
+                            },
+                            {
+                                subtitle: 'Free Wi-Fi'
+                            },
+                            {
+                                subtitle: 'Include Meals'
+                            }
+                        ]
+                    },
+                    {
+                        title: 'Ubud Waterfalls Tour',
+                        price: '700',
+                        imgurl: 'img/dieng.jpg',
+                        rating: 2,
                         highlights: [{
                                 subtitle: 'Free Pickup'
                             },

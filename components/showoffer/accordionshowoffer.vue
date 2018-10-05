@@ -3,7 +3,7 @@
         <ul uk-accordion class="uk-text-small">
             <li class="uk-open">
                 <hr class="uk-margin-small-top uk-margin-small-bottom">
-                <a class="uk-accordion-title uk-text-bold" style="font-size: 16px;" href="#"> HIGHLIGHT</a>
+                <a class="uk-accordion-title uk-text-bold" :style="s_font" href="#"> HIGHLIGHT</a>
                 <div class="uk-accordion-content">
                     <ul class="uk-list uk-list-bullet">
                         <li>Bersepeda santai di kawasan persawahan</li>
@@ -17,9 +17,9 @@
             </li>
             <li>
                 <hr class="uk-margin-small-top uk-margin-small-bottom">
-                <a class="uk-accordion-title uk-text-bold" style="font-size: 16px;" href="#">FASILITAS</a>
+                <a class="uk-accordion-title uk-text-bold" :style="s_font" href="#">FASILITAS</a>
                 <div class="uk-accordion-content">
-                    <p>TERMASUK</p>
+                    <h6>TERMASUK</h6>
                     <ul class="uk-list uk-list-bullet">
                         <li>Penjemputan dari bandara/hotel menuju meeting point</li>
                         <li>Tiket masuk tempat wisata</li>
@@ -28,7 +28,7 @@
                         <li>Dokumentasi foto</li>
                         <li>Asuransi perjalanan</li>
                     </ul>
-                    <p>TIDAK TERMASUK</p>
+                    <h6>TIDAK TERMASUK</h6>
                     <ul class="uk-list uk-list-bullet">
                         <li>Tiket pesawat</li>
                     </ul>
@@ -36,7 +36,7 @@
             </li>
             <li>
                 <hr class="uk-margin-small-top uk-margin-small-bottom">
-                <a class="uk-accordion-title uk-text-bold" style="font-size: 16px;" href="#">KEBIJAKAN PEMBATALAN</a>
+                <a class="uk-accordion-title uk-text-bold" :style="s_font" href="#">KEBIJAKAN PEMBATALAN</a>
                 <div class="uk-accordion-content">
                     <ul class="uk-list uk-list-bullet">
                         <li>Pembatalan H-7 tur, uang kembali 100%</li>
@@ -55,7 +55,8 @@
     module.exports = {
         data: function () {
             return {
-
+                s_font:{fontSize:'.875rem'},
+                s_font2:{fontSize:'.850rem'},
             }
         }
     };

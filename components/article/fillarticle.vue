@@ -9,7 +9,7 @@
                             tidur di luar kokpit selama 90 menit. Foto tersebar dan seketika dunia maya heboh
                             karenanya.</i></p>
                     <p><a class="" href="#">Himas Nur</a></p>
-                    <img data-src="https://phinemo.com/wp-content/uploads/2018/09/2-10-e1537244208124.jpeg" alt="" width="1920" height="1080" uk-img>
+                    <img data-src="https://phinemo.com/wp-content/uploads/2018/09/2-10-e1537244208124.jpeg" alt="" uk-img>
                     <p class="uk-article-meta uk-margin-remove-top uk-margin-bottom"><cite>Ilustrasi Awak
                             Penerbang Tertidur (Foto/Basith Subastian)</cite></p>
                     <p class="uk-text-justify"> Mengutip <em>Travel and Leisure</em> pada Senin (17/9), pada bulan
