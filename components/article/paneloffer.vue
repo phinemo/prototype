@@ -6,12 +6,12 @@
                 Offers</a>
         </div>
         <!-- End Button Offer -->
-        <div id="modal-full" class="uk-modal-full" uk-modal>
+        <div id="modal-full" class="" uk-modal>
             <div class="uk-modal-dialog uk-grid-small uk-position-cover" uk-grid>
                 <div class="uk-width-1-1 uk-navbar-container" uk-navbar>
                     <div class="uk-navbar-center">
                         <ul class="uk-navbar-nav">
-                            <li class="uk-text">Special Offer</li>
+                            <li class="uk-text uk-text-bold">Special Offers</li>
                         </ul>
                     </div>
                     <div class="uk-navbar-right">
@@ -20,9 +20,9 @@
                         </ul>
                     </div>
                 </div>
-                <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" :style="c_offer" >
+                <div class="uk-grid-collapse uk-child-width-1-1@s uk-child-width-1-1@m uk-flex-middle" :style="c_offer" >
                     <!-- Offer List -->
-                    <div class="uk-grid-small uk-animation-fade uk-flex-center uk-child-width-1-2@s uk-child-width-1-3@m uk-margin-small" 
+                    <div class="uk-grid-small uk-animation-fade uk-flex-center uk-child-width-1-2@s uk-child-width-1-1@m uk-margin-small" 
                      uk-grid>
                         <!-- Card Offer -->
                         <!-- <div class="uk-panel uk-panel-box"> -->
