@@ -1,8 +1,8 @@
 <template>
-    <div class="uk-container">
-        <div class="uk-grid">
-            <div class="uk-width-1-1 uk-margin-top">
-                <article class="uk-article">
+    <div class="">
+        <div class="uk-grid ">
+            <div class="uk-width-1-1 uk-padding-remove-left">
+                <article class="uk-article uk-padding-large uk-box-shadow-material-small" style="margin-left:30px;">
                     <h1 class="uk-article-header">Tak
                         Perlu Khawatir Bila Ternyata Pilot Tidur selama Penerbangan</h1>
                     <p class="uk-article-meta"><i>Agustus lalu, penumpang United Airlines menangkap foto pilot
@@ -17,7 +17,7 @@
                         terjadi “drama di udara” ketika seorang pilot United Airlines tertangkap kamera
                         sedang tertidur dalam pesawat dengan tujuan dari Amerika ke Glasglow, Skotlandia.
                     </p>
-                    <p class="uk-text-justify">oto yang telah tersebar itu sontak menjadi tanda tanya dan membuat
+                    <p class="uk-text-justify">Foto yang telah tersebar itu sontak menjadi tanda tanya dan membuat
                         heboh,&nbsp;lantaran berpikir jika pilot tidur siapa yang mengendalikan pesawat.</p>
                     <img class="uk-width-1-1" data-src="https://phinemo.com/wp-content/uploads/2018/09/1-68-e1537244315445.jpg" alt=""
                         uk-img>
@@ -34,9 +34,6 @@
                         justru meminta
                         para awak penerbang untuk istirahat saat melakukan penerbangan panjang.</p>
                 </article>
-            </div>
-            <div>
-                
             </div>
         </div>
     </div>

@@ -97,10 +97,13 @@
         </div> -->
         <navbar></navbar>
         <!-- Navbar End -->
+        <div class="uk-container uk-margin-auto-vertical">
         <fillarticle></fillarticle>
         <paneloffer></paneloffer>
         <recommended></recommended>
         <popular></popular>
+        </div>
+        
     </div>
     <!-- Content Fill -->
 
@@ -151,7 +154,7 @@
             components: {
                 'navbar': httpVueLoader('components/global/navbar.vue'),
                 'fillarticle': httpVueLoader('components/article/fillarticle.vue'),
-                'paneloffer': httpVueLoader('components/article/paneloffer.vue'),
+                'paneloffer': httpVueLoader('components/article/paneloffer_bk.vue'),
                 'recommended':httpVueLoader('components/article/recommended.vue'),
                 'popular':httpVueLoader('components/article/popular.vue')
             }
