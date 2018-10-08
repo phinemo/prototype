@@ -1,5 +1,5 @@
 <template>
-    <div uk-slideshow="animation: push; autoplay: true;" autoplay-interval="3000">
+    <div uk-slideshow="animation: push; autoplay: true; ratio: 16:8;" autoplay-interval="3000">
             <div class="uk-position-relative uk-visible-toggle uk-light">
                 <ul class="uk-slideshow-items">
                     <li v-for="(cover,index) in covers" :key="index" class="uk-transition-toggle">

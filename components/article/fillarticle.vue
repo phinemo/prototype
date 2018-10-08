@@ -3,13 +3,13 @@
         <div class="uk-grid">
             <div class="uk-width-1-1 uk-margin-top">
                 <article class="uk-article">
-                    <h1 class="uk-article-header uk-text-lead">Tak
+                    <h1 class="uk-article-header">Tak
                         Perlu Khawatir Bila Ternyata Pilot Tidur selama Penerbangan</h1>
                     <p class="uk-article-meta"><i>Agustus lalu, penumpang United Airlines menangkap foto pilot
                             tidur di luar kokpit selama 90 menit. Foto tersebar dan seketika dunia maya heboh
                             karenanya.</i></p>
                     <p><a class="" href="#">Himas Nur</a></p>
-                    <img data-src="https://phinemo.com/wp-content/uploads/2018/09/2-10-e1537244208124.jpeg" alt="" uk-img>
+                    <img class="uk-width-1-1" data-src="https://phinemo.com/wp-content/uploads/2018/09/2-10-e1537244208124.jpeg" alt="" uk-img>
                     <p class="uk-article-meta uk-margin-remove-top uk-margin-bottom"><cite>Ilustrasi Awak
                             Penerbang Tertidur (Foto/Basith Subastian)</cite></p>
                     <p class="uk-text-justify"> Mengutip <em>Travel and Leisure</em> pada Senin (17/9), pada bulan
@@ -19,7 +19,7 @@
                     </p>
                     <p class="uk-text-justify">oto yang telah tersebar itu sontak menjadi tanda tanya dan membuat
                         heboh,&nbsp;lantaran berpikir jika pilot tidur siapa yang mengendalikan pesawat.</p>
-                    <img data-src="https://phinemo.com/wp-content/uploads/2018/09/1-68-e1537244315445.jpg" alt=""
+                    <img class="uk-width-1-1" data-src="https://phinemo.com/wp-content/uploads/2018/09/1-68-e1537244315445.jpg" alt=""
                         uk-img>
                     <p class="uk-article-meta"><cite>(Istockphoto/Humonia)</cite></p>
                     <p class="uk-text-justify">Seorang penumpang yang mengambil foto tersebut mengaku melihat sang
@@ -34,6 +34,9 @@
                         justru meminta
                         para awak penerbang untuk istirahat saat melakukan penerbangan panjang.</p>
                 </article>
+            </div>
+            <div>
+                
             </div>
         </div>
     </div>

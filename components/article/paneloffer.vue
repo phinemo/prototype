@@ -22,7 +22,7 @@
                 </div>
                 <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" :style="c_offer" >
                     <!-- Offer List -->
-                    <div class="uk-grid-small uk-animation-fade uk-flex-center uk-child-width-1-9 uk-child-width-1-2@s uk-child-width-1-3@m uk-margin-small" 
+                    <div class="uk-grid-small uk-animation-fade uk-flex-center uk-child-width-1-2@s uk-child-width-1-3@m uk-margin-small" 
                      uk-grid>
                         <!-- Card Offer -->
                         <!-- <div class="uk-panel uk-panel-box"> -->
@@ -64,6 +64,7 @@
                     </div>
                     <!-- End Offer List -->
                 </div>
+
             </div>
         </div>
     </div>

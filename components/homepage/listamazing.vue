@@ -4,12 +4,14 @@
             <li class="uk-margin-small-right uk-margin-small-bottom" v-for="(offer, index) in offers" :key="index">
                 <div class=" uk-card uk-card-default uk-box-shadow-material-small uk-border-rounded">
                     <div class="uk-card-media-top">
-                        <a :href="offer.url"><img class="uk-border-rounded uk-height-small" :data-src="offer.image" :alt="offer.title"
-                                height="300" width="600" uk-img></a>
-                        <span class="uk-flex uk-position-bottom-right uk-label uk-margin-right" :style="s_label">{{offer.label}} </span>
+                        <a :href="offer.url"><img class="uk-border-rounded uk-height-small uk-width-1-1" 
+                        :data-src="offer.image" :alt="offer.title" uk-img></a>
+                        <span class="uk-flex uk-position-bottom-right uk-label uk-margin-right" 
+                        :style="s_label">{{offer.label}} </span>
                     </div>
-                    <div class="uk-card-body uk-padding-small uk-height-small">
-                        <h5 class="uk-margin-remove-bottom uk-text-bold"><a style="color:black;" :href="offer.url">{{offer.title}}</a></h5>
+                    <div class="uk-card-body uk-padding-small" style="height:100px;">
+                        <h5 class="uk-margin-remove-bottom uk-text-bold">
+                            <a style="color:black;" :href="offer.url">{{offer.title}}</a></h5>
                         <p class="uk-text-small uk-margin-small-bottom uk-margin-remove-top" style="color: orange;">From IDR {{offer.price}}K</p>
                         <i v-for="rating in offer.ratings" :key="rating" class="fa fa-star" aria-hidden="true" ></i>
                     </div>
